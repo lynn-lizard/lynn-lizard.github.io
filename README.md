@@ -1,2 +1,5 @@
-# lynn-lizard.github.io
-Site containing guides and pictures to Final Fantasy 14 field operations
+# Starlight Starter Kit: Basics
+
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+
+Still a massive WIP
