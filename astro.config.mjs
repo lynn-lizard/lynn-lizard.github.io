@@ -15,6 +15,7 @@ export default defineConfig({
 	pagination: false,
 	sidebar: [
 		// A group of links labelled "Constellations".
+		{ label: 'Home', link: '/' },
 		{
 		  label: 'Delubrum Reginae (Savage)',
 		  items: [
@@ -38,12 +39,12 @@ export default defineConfig({
 				  { label: 'Slimes', link: '/drs/guides/slimes' },
 				  { label: 'Golems', link: '/drs/guides/golems' },
 				  { label: 'Trinity Seeker', link: '/drs/guides/seeker' },
-				  { label: 'Dahu', link: '/drs/guides/slimes' },
-				  { label: 'Queen\'s Gurad', link: '/drs/guides/golems' },
-				  { label: 'Bozjan Phantom', link: '/drs/guides/seeker' },
-				  { label: 'Trinity Avowed', link: '/drs/guides/slimes' },
-				  { label: 'Stygimoloch Lord', link: '/drs/guides/golems' },
-				  { label: 'The Queen', link: '/drs/guides/seeker' },
+				  { label: 'Dahu', link: '/drs/guides/dahu' },
+				  { label: 'Queen\'s Gurad', link: '/drs/guides/guards' },
+				  { label: 'Bozjan Phantom', link: '/drs/guides/phantom' },
+				  { label: 'Trinity Avowed', link: '/drs/guides/avowed' },
+				  { label: 'Stygimoloch Lord', link: '/drs/guides/lord' },
+				  { label: 'The Queen', link: '/drs/guides/queen' },
 				],
 			  },
 		  ],
