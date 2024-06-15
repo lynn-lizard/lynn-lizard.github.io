@@ -12,6 +12,7 @@ export default defineConfig({
       github: 'https://github.com/lynn-lizard/lynn-lizard.github.io',
       discord: 'https://discord.gg/pebe'
     },
+	pagination: false,
     sidebar: [	
 	{
 	label: 'Holsters',
