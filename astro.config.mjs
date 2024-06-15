@@ -7,91 +7,60 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: 'https://lynn-lizard.github.io',
   integrations: [starlight({
-    title: 'NA Delubrum Savage',
+    title: 'NA Field Operations',
     social: {
       github: 'https://github.com/lynn-lizard/lynn-lizard.github.io',
       discord: 'https://discord.gg/pebe'
     },
 	pagination: false,
-    sidebar: [	
-	{
-	label: 'Holsters',
-	items: [
-		// Each item here is one entry in the navigation menu.
+	sidebar: [
+		// A group of links labelled "Constellations".
 		{
-			label: 'Melee DPS',
-			link: '/holsters/melee'
+		  label: 'Delubrum Reginae (Savage)',
+		  items: [
+			{ label: 'Overview', link: '/drs/overview' },
+			// A nested group of links for seasonal constellations.
+			{
+			  label: 'Holsters',
+			  collapsed: true,
+			  items: [
+				{ label: 'Tanks', link: '/drs/holsters/tank' },
+				{ label: 'Healers', link: '/drs/holsters/healer' },
+				{ label: 'Melee', link: '/drs/holsters/melee' },
+				{ label: 'Physical Ranged', link: '/drs/holsters/phys' },
+				{ label: 'Caster', link: '/drs/holsters/caster' },
+			  ],
+			},
+			{
+				label: 'Encounters',
+				collapsed: true,
+				items: [
+				  { label: 'Slimes', link: '/drs/guides/slimes' },
+				  { label: 'Golems', link: '/drs/guides/golems' },
+				  { label: 'Trinity Seeker', link: '/drs/guides/seeker' },
+				  { label: 'Dahu', link: '/drs/guides/slimes' },
+				  { label: 'Queen\'s Gurad', link: '/drs/guides/golems' },
+				  { label: 'Bozjan Phantom', link: '/drs/guides/seeker' },
+				  { label: 'Trinity Avowed', link: '/drs/guides/slimes' },
+				  { label: 'Stygimoloch Lord', link: '/drs/guides/golems' },
+				  { label: 'The Queen', link: '/drs/guides/seeker' },
+				],
+			  },
+		  ],
 		},
 		{
-			label: 'Physical Ranged DPS',
-			link: '/holsters/phys'
+			label: 'Shade\'s Triangle',
+			items: [
+				{ label: 'Coming in 7.0!!', link: '/triangle/confirmed' },
+			]	
 		},
 		{
-			label: 'Caster DPS',
-			link: '/holsters/caster'
-		},
-		{
-			label: 'Tanks',
-			link: '/holsters/tank'
-		},		
-		{
-			label: 'Healers',
-			link: '/holsters/healer'
-		}]
-	},	
-	{
-      label: 'Encounter Guides',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Slimes',
-        link: '/guides/slimes'
-      },
-	  {
-        label: 'Golems',
-        link: '/guides/golems'
-      },
-	  {
-        label: 'Trinity Seeker',
-        link: '/guides/seeker'
-      },
-	  {
-        label: 'Dahu',
-        link: '/guides/dahu'
-      },
-	  {
-        label: 'Queen\'s Guard',
-        link: '/guides/guards'
-      },
-	  {
-        label: 'Bozjan Phantom',
-        link: '/guides/phantom'
-      },
-	  {
-        label: 'Trinity Avowed',
-        link: '/guides/avowed'
-      },
-	  {
-        label: 'Stygimoloch Lord',
-        link: '/guides/lord'
-      },
-	  {
-        label: 'The Queen',
-        link: '/guides/queen'
-      },
-	]
-    }, {
-      label: 'Others',
-      items: [
-		// Each item here is one entry in the navigation menu.
-		{
-			label: 'Credits',
-			link: '/others/credits'
-		},		
-		{
-			label: 'Discords',
-			link: '/others/discords'
-		}]
-    }]
+			label: 'Credits and Discords',
+			items: [
+				{ label: 'Credit', link: '/others/credits' },
+				{ label: 'Discords', link: '/others/discords' },
+			]	
+		}
+	  ]
   }), mdx()]
 });
