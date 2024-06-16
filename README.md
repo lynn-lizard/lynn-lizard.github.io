@@ -1,4 +1,4 @@
-# NA Delubrum Savage
+# NA Field Operations Library
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-Still a massive WIP
+Library filled with as up-to-date materials as possible.
