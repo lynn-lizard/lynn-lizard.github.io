@@ -6,6 +6,8 @@ import { Aside } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 
+import ActionIcon from "../../../components/ActionIcon.astro";
+
 <link
   rel="stylesheet"
   media="(prefers-color-scheme:dark)"
@@ -14,34 +16,72 @@ import { Image } from 'astro:assets';
 />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 
+<html>
 <body>
 ### All Roles ###
-- Pooling resources and bursting together as a party will always yield the best results.
-- **Resistance Reraisers** should be applied at all times. Having one on gives you a 70% (or 80%) chance of being revived immediately on death.
-- **Light Curtains** are useful during Queen's Guard, Stygimoloch Lord, and The Queen to reflect various AoEs.
-- If you are looking for resources to improve at your job, please visit <a href="https://www.thebalanceffxiv.com/" target="_blank">The Balance</a> website.
-<br></br>
-<hr></hr>
+The usage of lost actions is key to clearing Delubrum (Savage). Bosses and enemies are balanced around using said actions (essences too!), so please make sure you understand how the duty action system works.
+
+- Pooling resources, aligning buffs, and bursting together as a party will always yield the best results.
+  - If you are looking for resources to improve at your job and understanding how to burst effectively, please visit <a href="https://www.thebalanceffxiv.com/" target="_blank">The Balance</a> website.
+- <ActionIcon icon="reraiser"/>**Resistance Reraisers** should be applied at all times. Having one on gives you a 70% (or 80%) chance of being revived immediately on death.
+- <ActionIcon icon="curtain"/>**Light Curtains** are useful during Queen's Guard, Stygimoloch Lord, and most noteably The Queen to reflect various AoEs.
+<br/> <hr />
 
 ### Melees ###
-Melees do lots of damage. If you don't do a lot of damage then please go checkout your job guide on <a href="https://na.finalfantasyxiv.com/jobguide/battle/" target="_blank">https://na.finalfantasyxiv.com/jobguide/battle/</a>.
-<br></br>
+<div class="text-box">
+Melee DPS have the highest damage potential of any base role with little to no outside support needed. <ActionIcon icon="fop"/>**Font of Power** and <ActionIcon icon="hsac"/>**Banner of Honored Sacrifice**
+should be used together every **2 minutes** along with other raid buffs and high potency skills.
+</div>
+:::danger[Lost Rend Armor]
+Two players in the alliance will be assigned to run **Lost Rend Armor**. If assigned, you will replace <ActionIcon icon="hsac"/>**Banner of Honored Sacrifice** with <ActionIcon icon="rend"/>**Lost Rend Armor** and alternate uses with the other assigned rend
+user to maintain 100% buff uptime on the boss(es).
 
-### Physical Ranged ###
-Dervish bots lol
-<br></br>
+:::
+<br/> <hr />
+
+### Physical Ranged
+Physical Ranged DPS (Dancer, Bard, and Machinst) provide a strong critical hit and damage buff to the party. These jobs are commonly assigned to run <ActionIcon icon="fop"/>**Font of Power** and<ActionIcon icon="dervish"/>**Lost Dervish** and are to be used
+during every **2 minute** burst to maximize buffs during that window of time. Similiar to Melees, you should be putting any high potency skills in this window to achieve their maximum potency/damage.
+
+:::caution[Dervish Drifting]
+<ActionIcon icon="dervish"/>**Lost Dervish** should be drifted into the next 2 minute window to catch all buffs. It's suggested to hold the action ~20 seconds before using it to ensure it catches a majority of the party's burst.
+:::
+<br/> <hr />
 
 ### Casters ###
-Cure 4 bots lol
-<br></br>
+Using **Font of Magic** or **Chainspell** together during every **2 minute** burst to maximize damage. However, one caster per party should bring <ActionIcon icon="cure4"/>**Lost Cure 4**. Cure 4 has a synergy with **Pure Essence of the Elder** that when used,
+anyone healed by it will recieve **Lost Bravery** for 10 seconds. This bravery effect is stronger than the casted effect from the base Lost Bravery action (5%). It's up to the cure 4 caster to decide whether to drop **Font of Magic** or **Chainspell**
+to bring **Lost Cure 4**. Do keep in the mind the pros and cons of both aforementioned actions and plan accordingly (i.e. Bringing Resistance Ether Kits to supplement Font's MP drain).
+
+:::tip[Cure 4 Usage]
+**Lost Cure 4** is a massive 21,700 potency heal that should be used on every instance of damage (raidwides, mechanics, etc...). This will make your healers happy and keep the Bravery damage buff rolling at
+all times.
+:::
+<br/> <hr />
 
 ### Tanks ###
-Blue DPS bots lol
-<br></br>
+Tanks should be using <ActionIcon icon="fop"/>**Font of Power** and <ActionIcon icon="hsac"/>**Banner of Honored Sacrifice** together during every **2 minute** burst window. Similar to other roles, you should be putting your highest damaging skills during this
+windows to help maximize your damage. One tank per party should also bring two plates of <ActionIcon icon="shell2"/>**Lost Shell 2** and two plates of <ActionIcon icon="aethershield"/>**Lost Aethershield**.
+
+:::note[Shell 2 and Aethershield]
+At both Trinity Avowed and The Queen the assigned tank should slot in <ActionIcon icon="shell2"/>**Lost Shell 2** over their <ActionIcon icon="hsac"/>**Banner of Honored Sacrifice** and proceed to apply <ActionIcon icon="shell2"/>**Lost Shell 2** to anyone who wants the buff. Afterwards, they
+will slot in <ActionIcon icon="aethershield"/>**Lost Aethershield** and use it on the boss's raidwide attacks. These raidwides hit for heavy damage and apply a strong DoT.
+:::
+<br/> <hr />
 
 ### Healers ###
-Arise bots lol
+Healers should use <ActionIcon icon="chainspell"/>**Chainspell** during every **2 minute** burst window. Similar to other roles, you should attempt to put your highest potency skills during these windows
+to maximize your damage. You will also be required to bring multiple utility actions, like Steelsting/Spellforge at Queen's Gurad and Dispel on several fights. 
+White Mages can replace <ActionIcon icon="chainspell"/>**Chainspell** with <ActionIcon icon="seraphstrike"/>**Seraph Strike**, which should be used every minute as soon as it comes up
+along with **Thin Air** to negate the MP cost. You will also need to bring <ActionIcon icon="arise"/>**Lost Arise** to raise anyone who has died. 
+Healers should attempt to bring as many arises as they comfortable can.
+
+:::caution[Lost Arise Usage]
+<ActionIcon icon="arise"/>**Lost Arise** synergizes with your <ActionIcon icon="divine"/>**Pure Essence of the Divine** to grant Arise a 15% chance of raising a dead player. To better facilitate uses, please stand over the body you are trying to arise.
+This helps prevent multiple casts from going out and potentially being wasted. You should also attempt to raise mid-combat as well. Anyone raised with Lost Arise will not recieve a Weakness or Brink of Death.
+:::
 </body>
+</html>
 
 {/* 
 <Image alt="DPS" class="lost-actions-images" loading="eager" width="750" height="300" src="/drs/dps.png"/>

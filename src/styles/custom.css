@@ -9,6 +9,17 @@
 	--sl-content-width: 80%;
 }
 
+.lost-action-icon{
+	display: inline !important;
+	position: relative;
+	top: 7px;
+	margin-right: -0.125em;
+	margin-left: 0.075em;
+	vertical-align: baseline;
+	width: 25px;
+	height: 25px;
+}
+
 .social-icons a,
 .site-title{
 	color: hsl(0, 0%, 97%);

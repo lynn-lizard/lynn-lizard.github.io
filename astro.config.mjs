@@ -82,7 +82,10 @@ export default defineConfig({
           label: 'The Queen',
           link: '/drs/guides/queen'
         }]
-      }]
+      }, {
+        label: 'Hosting Resources',
+        link: '/drs/hosting'
+    }]
     }, {
       // Shade's Triangle
       label: 'Shade\'s Triangle',

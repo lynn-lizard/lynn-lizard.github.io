@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+
+const { icon } = Astro.props;
+---
+
+<actionicon>
+    <Image alt=`${icon}` class="lost-action-icon" loading="eager" width="25" height="25" src=`/drs/actions/${icon}.png`` />
+</actionicon>
