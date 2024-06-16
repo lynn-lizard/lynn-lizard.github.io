@@ -84,6 +84,12 @@ hr {
   	width: 40%;
 }
 
+.lost-actions-images {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
 .ulti-summary{
 	width: 100%;
 }
@@ -195,12 +201,12 @@ hr {
 		}
 
 		&:nth-of-type(1)::after {
-			background-color: #ac7522;
+			background-color: #8c3211;
 			border-radius: 6px 0 0 6px;
 		}
 
 		&:nth-of-type(2)::after {
-			background-color: #1d5296;
+			background-color: #4e85cd;
 			border-radius: 6px 0 0 6px;
 		}
 
