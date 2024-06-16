@@ -3,10 +3,8 @@ title: Lost Action for Beginners
 description: Learn to use Lost Actions effectively
 ---
 import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import { Image } from 'astro:assets';
-
-import ActionIcon from "../../../components/ActionIcon.astro";
+import ActionIcon from '@components/ActionIcon.astro'
+import Footer from "@components/Footer.astro";
 
 <link
   rel="stylesheet"
@@ -49,9 +47,11 @@ during every **2 minute** burst to maximize buffs during that window of time. Si
 <br/> <hr />
 
 ### Casters ###
-Using **Font of Magic** or **Chainspell** together during every **2 minute** burst to maximize damage. However, one caster per party should bring <ActionIcon icon="cure4"/>**Lost Cure 4**. Cure 4 has a synergy with **Pure Essence of the Elder** that when used,
-anyone healed by it will recieve **Lost Bravery** for 10 seconds. This bravery effect is stronger than the casted effect from the base Lost Bravery action (5%). It's up to the cure 4 caster to decide whether to drop **Font of Magic** or **Chainspell**
-to bring **Lost Cure 4**. Do keep in the mind the pros and cons of both aforementioned actions and plan accordingly (i.e. Bringing Resistance Ether Kits to supplement Font's MP drain).
+Using <ActionIcon icon="fom"/>**Font of Magic** or <ActionIcon icon="chainspell"/>**Chainspell** together during every **2 minute** burst to maximize damage. However, 
+one caster per party should bring <ActionIcon icon="cure4"/>**Lost Cure 4**. Cure 4 has a synergy with <ActionIcon icon="elder"/>**Pure Essence of the Elder** that when used,
+anyone healed by it will recieve **Lost Bravery** for 10 seconds. This bravery effect is stronger than the casted effect from the base Lost Bravery action (5%). 
+It's the choice of that caster to drop <ActionIcon icon="fom"/>**Font of Magic** or drop <ActionIcon icon="chainspell"/>**Chainspell**
+to instead bring <ActionIcon icon="cure4"/>**Lost Cure 4**. Do keep in the mind the pros and cons of both aforementioned actions and plan accordingly (i.e. Bringing Resistance Ether Kits to supplement Font's MP drain).
 
 :::tip[Cure 4 Usage]
 **Lost Cure 4** is a massive 21,700 potency heal that should be used on every instance of damage (raidwides, mechanics, etc...). This will make your healers happy and keep the Bravery damage buff rolling at
@@ -80,6 +80,8 @@ Healers should attempt to bring as many arises as they comfortable can.
 <ActionIcon icon="arise"/>**Lost Arise** synergizes with your <ActionIcon icon="divine"/>**Pure Essence of the Divine** to grant Arise a 15% chance of raising a dead player. To better facilitate uses, please stand over the body you are trying to arise.
 This helps prevent multiple casts from going out and potentially being wasted. You should also attempt to raise mid-combat as well. Anyone raised with Lost Arise will not recieve a Weakness or Brink of Death.
 :::
+
+<Footer />
 </body>
 </html>
 
