@@ -36,12 +36,6 @@ export default defineConfig({
         label: 'Holsters',
         collapsed: true,
         items: [{
-          label: 'Tanks',
-          link: '/drs/holsters/tank'
-        }, {
-          label: 'Healers',
-          link: '/drs/holsters/healer'
-        }, {
           label: 'Melee',
           link: '/drs/holsters/melee'
         }, {
@@ -50,6 +44,12 @@ export default defineConfig({
         }, {
           label: 'Caster',
           link: '/drs/holsters/caster'
+        }, {
+          label: 'Tanks',
+          link: '/drs/holsters/tank'
+        }, {
+          label: 'Healers',
+          link: '/drs/holsters/healer'
         }]
       }, {
         label: 'Encounters',
