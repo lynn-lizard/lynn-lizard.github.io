@@ -20,6 +20,8 @@
 
 .two-holster-tables{
 	display: flex !important;
+	flex-wrap: wrap;
+	flex-direction: row;
 	justify-content: space-between;
 	margin: auto 2.5rem 0 2.5rem;
 	font-size: 0.85vw;
@@ -31,6 +33,7 @@
 	}
 
 	td{
+		width: auto;
 		margin: 0 auto;
 		text-align: center;
 	}

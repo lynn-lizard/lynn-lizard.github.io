@@ -50,6 +50,9 @@ export default defineConfig({
         }, {
           label: 'Healers',
           link: '/drs/holsters/healer'
+        }, {
+          label: 'Off Essences',
+          link: '/drs/holsters/meme'
         }]
       }, {
         label: 'Encounters',
@@ -82,7 +85,10 @@ export default defineConfig({
           label: 'The Queen',
           link: '/drs/guides/queen'
         }]
-      }, {
+      },{
+        label: 'How to Blood Rage',
+        link: '/drs/bloodrage'
+      },{
         label: 'Hosting Resources',
         link: '/drs/hosting'
     }]

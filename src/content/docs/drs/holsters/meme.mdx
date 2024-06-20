@@ -1,0 +1,606 @@
+---
+title: Off Essence Holsters
+description: PROELIUM FATALE. LASCIATE OGNI SPERANZA, VOI CH'ENTRATE.
+---
+
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+These are all high-level holsters that require a strong understanding of the raid to fully take advantage of. Their DPS outputs are incredibly high but they make you suspect to being one shot by mechanics and even raidwides if you are not attentive.
+Please use these holsters with caution.
+
+However, they are some of the most fun you can have in Delubrum (Savage). So please, if you are given the opprotunity to try one out, definitely take advantage of it!
+
+:::danger[Non Pure Essences Ahead]
+Majority of these holsters contain non-pure essence set ups. They require both Bubble and Shell 2 to function properly. All hosts do not allow these essences unless they give you
+strict permission to run them. **Please ask the host before ever using any of these holsters.** 
+
+If you are found to be using a non-pure essence with permission, you will likely be left on the ground and kicked from the run.
+:::
+
+<sl-card class="card-basic ulti-summary">
+## Table of Contents
+- [**Gambler DPS**](#gambler-dps)
+- [**Impetus Chaining Tank**](#impetus-chaining-tank)
+- [**Impetus Chaining Aethershield Tank**](#impetus-chaining-aethershield-tank)
+- [**Irregular w/ Honored Sacrifice Overslots**](#irregular-w-honored-sacrifice-overslots)
+- [**Profane Healer**](#profane-healer)
+- [**Profane Chainspell Battery**](#profane-chainspell-battery)
+</sl-card>
+<br/><hr/>
+
+### Gambler DPS
+A bag that's mostly used to fish for the Healer LB3 effect from the Dynamis Dice. This can be useful during anyprogs if the fights tend to drag for much longer than intended or if there are tons of bodies on the ground. This bag is not optimal and you will
+be sacrificing your own DPS for the **~33% chance** at raising up to 32 bodies in a 30 yalm radius. If you want to 
+
+This essence is really only viable on Physical Ranged DPS due to it's pure essence synergy being not as useful as the other two DPS's. Another cavet is that you are required to have 10 fortitude stacks to survive raidwides from all the major fights.
+
+<Image
+    src="/drs/diceprobs.png"
+    width="200"
+    height="100"
+    decoding="async"
+    loading="eager"
+    alt="DSR Cheatsheet"
+    onclick="window.open('/drs/diceprobs.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+<div class="two-holster-tables">
+  <table class="dps">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td colspan="3">**Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Dervish**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/gambler.png"/></td>
+      <td colspan="3">**Pure Essence of the Gambler**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="dps">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dervish.png"/></td>
+      <td >**Lost Dervish**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bubble.png"/></td>
+      <td>**Lost Bubble**</td>
+      <td>2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dice.png"/></td>
+      <td>**Dynamis Dice**</td>
+      <td>6</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+:::caution[Bubble]
+You will use Bubble on yourself at Trinity Avowed and Queen. You will not have enough health to survive the raidwides with just **Aethershield** and **Shell 2** alone.
+:::
+
+<br/><hr/>
+
+### Impetus Chaining Tank
+**Lost Impetus** can be used to chain together **Lost Blood Rage** throughout a longer fight. However, **Lost Impetus** is a bit taboo due to the Swift it gives to nearby party members and the problems it can cause
+during Trinity Avowed's "Forced March" mechanic.
+
+This holster lets you Impetus chain for all but one fight (typically Trinity Avowed) due to the limited number of **Blood Rage** plates you can bring.
+
+If you're looking for more on how to Impetus chain, please see: \<insert link here\>
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td colspan="3">**Lost Impetus**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td >**Lost Blood Rage**</td>
+      <td>3</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td>**Lost Impetus**</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Impetus Chaining Aethershield Tank
+**Lost Impetus** can be used to chain together **Lost Blood Rage** throughout a longer fight. However, **Lost Impetus** is a bit taboo due to the Swift it gives to nearby party members and the problems it can cause
+during Trinity Avowed's "Forced March" mechanic.
+
+This holster lets you Impetus chain for Trinity Seeker and Queen's Guard before swapping into the Aethershield role for Avowed/Queen.
+
+If you're looking for more on how to Impetus chain, please see: \<insert link here\>
+
+:::danger[Ask the Host and Your Party!]
+PLEASE ask both the host and your party if they are okay with you using **Lost Impetus.** If anyone says no, please respect that choice.
+:::
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td colspan="3">**Lost Impetus**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraise.png"/></td>
+      <td>**Lost Reraise**</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td >**Lost Blood Rage**</td>
+      <td>2</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td>**Lost Shell 2**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+
+### Irregular w/ Honored Sacrifice Overslots
+This is the glass cannon of Delubrum (Savage). Irregular will help you be output as much DPS that is on par with an Excellence Melee DPS. However, you **must** mitigate everything instance of damage you take. This also includes: raidwides and any damage from mechanics.
+It is commonly suggested to use your short cooldown along with another cooldown like rampart, your 30%, or your other personal mitigations.
+
+During your opener, while building **Blood Rage** stacks, you would swap into **Honored Sacrifice** to help increase your DPS output. When under **Blood Rush**, make sure to be spaamming both **Font of Power** and **Honored Sacrifice** on cooldown to get as many extra uses as possible. Drifting them back into the **2 minute**
+buff window for any future bursts.
+
+The 2 **Impetus** plates are used for TA and Queen to accerlate your enterance into the **Blood Rush** window. You would slot it after you activate **Blood Rage**, use **Impetus**, slot in **Honored Sacrifice**, and then dash twice to enter **Blood Rush** during the 2 minute buff window.
+
+:::danger[Fortitudes, Bubble and Shell 2]
+You are REQUIRED to have 8 stacks of Fortitude, Bubble, and Shell 2. Not having these will often result in instantaneous death. 
+:::
+
+You can also swap out the contents of this holster for something akin to Impetus chaining while still using Irregular. If you're looking for more on how to Impetus chain, please see: \<insert link here\>
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/irreg.png"/></td>
+      <td colspan="3">**Deep Essence of the Irregular**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>3</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/hsac.png"/></td>
+      <td>**Banner of Honored Sacrifice**</td>
+      <td>4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td>**Lost Impetus**</td>
+      <td>2</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Profane Healer
+Ditch the utility and become the angry healer you've always wanted to be. You will become essentially a DPS now and should act like one. Your one job is to deal as much damage as possible. Doing "Chainspell openers"
+to help maximize as damage as you can is key to performing well. You should have a **Full Cure Healer** helping support your MP costs as well as a **Cure 2** phys. ranged too.
+
+During your opener you will press **Chainspell** then slot **Seraph Strike** over it. From there you will press both **Font of Magic** and **Seraph Strike** together during every **2 minute** raid buff window.
+Remember to use **Thin Air** if you're on WHM!
+
+:::danger[Bubble and Shell 2]
+You are REQUIRED to have Bubble and Shell 2. Not having these will often result in instantaneous death. 
+:::
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fom.png"/></td>
+      <td colspan="3">**Lost Font of Magic**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/chainspell.png"/></td>
+      <td colspan="3">**Lost Chainspell**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/profane.png"/></td>
+      <td colspan="3">**Deep Essence of the Profane**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/seraphstrike.png"/></td>
+      <td>**Lost Seraph Strike**</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/burst.png"/></td>
+      <td>**Lost Burst**</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/etherkit.png"/></td>
+      <td>**Resistance Ether Kits**</td>
+      <td>12</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+:::note[Lost Burst]
+Burst is used for Queen's guard as it's a large potency increased per GCD on two targets. Burst is also a gain on single targets for SCH and AST.
+:::
+
+<br/><hr/>
+
+### Profane Chainspell Battery
+Ditch the utility and become the angry healer you've always wanted to be. You will become essentially a DPS now and should act like one. Your one job is to deal as much damage as possible. Doing "Chainspell openers"
+to help maximize as damage as you can is key to performing well. You should have a **Full Cure Healer** helping support your MP costs as well as a **Cure 2** phys. ranged too.
+
+Used to help carry **Chainspell** through the whole instance. At your assigned fight, you will slot in Chainspell over the **Non-Font of Magic** action and mark yourself with a **+** head marker signifying you are ready to be mimicked.
+
+During your opener you will press **Chainspell** then slot **Seraph Strike** over it. From there you will press both **Font of Magic** and **Seraph Strike** together during every **2 minute** raid buff window.
+Remember to use **Thin Air** if you're on WHM!
+
+:::danger[Bubble and Shell 2]
+You are REQUIRED to have Bubble and Shell 2. Not having these will often result in instantaneous death. 
+:::
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fom.png"/></td>
+      <td colspan="3">**Lost Font of Magic**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/chainspell.png"/></td>
+      <td colspan="3">**Lost Chainspell**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/profane.png"/></td>
+      <td colspan="3">**Deep Essence of the Profane**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/chainspell.png"/></td>
+      <td>**Lost Chainspell**</td>
+      <td>1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/seraphstrike.png"/></td>
+      <td>**Lost Seraph Strike**</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/burst.png"/></td>
+      <td>**Lost Burst**</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/etherkit.png"/></td>
+      <td>**Resistance Ether Kits**</td>
+      <td>9</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+:::note[Lost Burst]
+Burst is used for Queen's guard as it's a large potency increased per GCD on two targets. Burst is also a gain on single targets for SCH and AST.
+:::
+
+<Footer />

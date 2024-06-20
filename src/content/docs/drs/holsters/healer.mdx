@@ -16,7 +16,7 @@ import Footer from "@components/Footer.astro";
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
 
 Healers are the utility masters and primary source of raising when inside of Delubrum (Savage). There are multiple fights in which certain actions and items must be used to counteract mechanics that would otherwise be
-considered deadly. Noteably during Queen's Guard the first two bosses, Warrior and Knight, will apply a vulnerability down to either physical or magical damage sources. So the healers must be swift in applying either Spellforge or Steelsting respectively. While you should still be doing damage,
+considered deadly. Noteably during Queen's Guard on the first two bosses, Warrior and Knight, will apply a vulnerability down to either physical or magical damage sources. So the healers must be swift in applying either Spellforge or Steelsting respectively. While you should still be doing damage,
 please consider it a secondary responsibility when certain mechanics appear.
 
 Speaking of raising: your **Pure Essence of the Divine** synergizes with **Lost Arise**. When casting Arise on a KO'd player you have a 15% chance to raise them per Arise cast. This is one of the other few ways to raise any dead players
@@ -35,6 +35,15 @@ Some suggestions on what to include to fill space: extra **Lost Arises**, **Ligh
 :::note[Pure Essences]
 You will only need **one** pure essence each time you enter Delubrum Reginae. Essences do persist through death and are only removed if you remove the buff yourself or you leave the instance.
 :::
+
+<sl-card class="card-basic ulti-summary">
+## Table of Contents
+- [**WHM Healer Holster**](#whm-healer-holster)
+- [**Non-WHM Healer Holster**](#non-whm-healer-holster)
+- [**Full Cure Healer**](#full-cure-healer)
+- [**Off Essence Supporter**](#off-essence-supporter)
+</sl-card>
+
 <br/><hr/>
 
 ### WHM Healer Holster
@@ -215,7 +224,7 @@ You should never slot over **Lost Chainspell** at all and instead use the second
 <br/><hr/>
 
 ### Full Cure Healer
-need to check math here
+Standard healer that can also help support the MP hungry jobs/roles like DRK, Profanes, Flare Star, and any other caster job. You should pop **Full Cure** after every trash fight and **~40 seconds** into combat. 
 
 <div class="two-holster-tables">
   <table class="healer">
@@ -228,7 +237,7 @@ need to check math here
       <th colspan="4">Lost Action</th>
     </tr>
     <tr>
-      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/etherkit.png"/></td>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fullcure.png"/></td>
       <td colspan="3">**Lost Full Cure**</td>
     </tr>
     <tr>
@@ -299,5 +308,111 @@ need to check math here
     </tr>
   </table>
 </div>
+
+:::tip[Lost Full Cure]
+**Full Cure** fully heals everyone in a 15 yalm radius and giving 10,000 MP to everyone as well! To add even *more* onto this, everyone affected will recieve and **Potion Kit** and **Ether Kit**!! This is incredibly powerful as it allows
+MP users to continue outputting large amounts of damage and continue to use their MP spending skills.
+:::
+
+<br/><hr/>
+
+### Off Essence Supporter
+This bag is primarily used in reclears to help anyone using a non-pure essence survive the major fights. You will pass out **Shell 2** and **Bubble** to anyone using a non-pure at all major fights, making sure to not overslot **Lost Full Cure.**
+
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fullcure.png"/></td>
+      <td colspan="3">**Lost Full Cure**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td colspan="3">**Lost Shell 2**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/divine.png"/></td>
+      <td colspan="3">**Pure Essence of the Divine**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td >**Lost Arise**</td>
+      <td>9</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/spellforge.png"/></td>
+      <td>**Lost Spellforge**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/steelsting.png"/></td>
+      <td>**Lost Steelsting**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dispel.png"/></td>
+      <td>**Lost Dispel**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td>**Lost Shell 2**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bubble.png"/></td>
+      <td>**Lost Bubble**</td>
+      <td>4</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+
 
 <Footer />
