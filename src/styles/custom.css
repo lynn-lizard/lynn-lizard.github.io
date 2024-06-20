@@ -18,24 +18,32 @@
 	vertical-align: baseline;
 }
 
-.holster-table{
-	max-width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-	font-size: 20px;
-	width: 100%;
-	margin: auto;
-	empty-cells: hide;
-	align-items: center;
+.two-holster-tables{
+	display: flex !important;
+	justify-content: space-between;
+	margin: auto 2.5rem 0 2.5rem;
+	font-size: 0.85vw;
+	color: white;
+	align-items: baseline;
 
-	th{
-		color: white;
-		background-color: rgb(175, 35, 35);
+	caption{
+		font-size: 1vw
 	}
 
 	td{
 		margin: 0 auto;
 		text-align: center;
+	}
+	
+	td:first-child{
+		padding: .3rem .75rem .3rem .5rem;
+		border-right: hidden;
+	}
+
+	td:nth-child(2){
+		padding-left: 0;
+		padding-right: .5rem;
+		text-align: left;
 	}
 
 	tr:nth-child(even) {
@@ -45,6 +53,17 @@
 	tr:nth-child(odd) {
 		background-color: rgb(54, 54, 54);
 	}
+}
+
+table.dps{
+	th{
+		background-color: rgb(175, 35, 35);
+	}
+
+}
+
+.hidden-right-border{
+	border-right: hidden;
 }
 
 .social-icons a,
