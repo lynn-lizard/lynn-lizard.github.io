@@ -1,6 +1,303 @@
 ---
 title: Healer Holsters
-description: dem c4s tek er jerbs
+description: Arise and Utility
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+Healers are the utility masters and primary source of raising when inside of Delubrum (Savage). There are multiple fights in which certain actions and items must be used to counteract mechanics that would otherwise be
+considered deadly. Noteably during Queen's Guard the first two bosses, Warrior and Knight, will apply a vulnerability down to either physical or magical damage sources. So the healers must be swift in applying either Spellforge or Steelsting respectively. While you should still be doing damage,
+please consider it a secondary responsibility when certain mechanics appear.
+
+Speaking of raising: your **Pure Essence of the Divine** synergizes with **Lost Arise**. When casting Arise on a KO'd player you have a 15% chance to raise them per Arise cast. This is one of the other few ways to raise any dead players
+before, during, or after combat. Healers should focus on packing as many **Lost Arise** plates as they are comfortably able to. The more Arises available, the more likely a run is to succed overall. When attempt to Arise another player _out of combat_, it's common courtesy to stand on top of
+the body to signify that you are raising them.
+
+:::caution[Lost Arise]
+Raising a player with **Lost Arise** does not inflict Weakness or further progress Weakness into a Brink of Death. Consider attempting to raise mid-combat when there are no mechanics going on.
+:::
+
+Each holster is split into two sections, one as a "pre-load"  holster and an "instance ready" holster. The "pre-load" is for when you first get into the instance. It will contain your pure essence, reraiser, and actions that you will slot in or refresh charges on.
+The "instance ready" holster has _everything_ you will need for the entire instance. It should often contain extra reraisers, spare copies of lost actions you need, and light curtains. It is strongly encouraged that you fill your holster to as close as full as you can.
+
+Some suggestions on what to include to fill space: extra **Lost Arises**, **Light Curtains**, and extra **Resistance Reraisers**.
+
+:::note[Pure Essences]
+You will only need **one** pure essence each time you enter Delubrum Reginae. Essences do persist through death and are only removed if you remove the buff yourself or you leave the instance.
+:::
+<br/><hr/>
+
+### WHM Healer Holster
+This bag encompasses everything that you will need for the entire instance to help resolve all mechanics and raise ~6-7 bodies on average. WHM's prefer to use **Seraph Strike** over other damage actions due to it's high burst potential and ability to negate the 5000 MP cost with **Thin Air**. 
+You should never slot over **Seraph Strike** at all and instead use the second action slot as your main utility button. 
+
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/seraphstrike.png"/></td>
+      <td colspan="3">**Seraph Strike**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td colspan="3">**Lost Arise**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/divine.png"/></td>
+      <td colspan="3">**Pure Essence of the Divine**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td >**Lost Arise**</td>
+      <td>8</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/spellforge.png"/></td>
+      <td>**Lost Spellforge**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/steelsting.png"/></td>
+      <td>**Lost Steelsting**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dispel.png"/></td>
+      <td>**Lost Dispel**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>4</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Non-WHM Healer Holster
+This bag encompasses everything that you will need for the entire instance to help resolve all mechanics and raise ~6-7 bodies on average. Non-WHM jobs prefer **Lost Chainspell** as it will last the entire instance and causes you to not pay a 5000 MP cost when using **Seraph Strike**.
+You should never slot over **Lost Chainspell** at all and instead use the second action slot as your main utility button. 
+
+
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/chainspell.png"/></td>
+      <td colspan="3">**Lost Chainspell**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td colspan="3">**Lost Arise**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/divine.png"/></td>
+      <td colspan="3">**Pure Essence of the Divine**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td >**Lost Arise**</td>
+      <td>8</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/spellforge.png"/></td>
+      <td>**Lost Spellforge**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/steelsting.png"/></td>
+      <td>**Lost Steelsting**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dispel.png"/></td>
+      <td>**Lost Dispel**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>4</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Full Cure Healer
+need to check math here
+
+<div class="two-holster-tables">
+  <table class="healer">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/etherkit.png"/></td>
+      <td colspan="3">**Lost Full Cure**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td colspan="3">**Lost Arise**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/divine.png"/></td>
+      <td colspan="3">**Pure Essence of the Divine**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="healer">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/arise.png"/></td>
+      <td >**Lost Arise**</td>
+      <td>11</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/spellforge.png"/></td>
+      <td>**Lost Spellforge**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/steelsting.png"/></td>
+      <td>**Lost Steelsting**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dispel.png"/></td>
+      <td>**Lost Dispel**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>7</td>
+      <td>7</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+
+<Footer />

@@ -1,6 +1,541 @@
 ---
-title: Tank Holsters
-description: Indomitable
+title: Tank Holstrs
+description: Aethershield and Blood Rage
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+Tanks help support the parties by supplying a powerful AoE mitigation during Trinity Avowed and The Queen while also dishing out some strong DPS on their own. 
+
+Your **Pure Essence of the Indomitable** synergizes with **Lost Sacrifice** to give you a 50% chance to "dodge" the Doom given by **Lost Sacrifice**. This can be great in a pinch when the raid begins to run low on **Lost Arises**.
+
+Each holster is split into two sections, one as a "pre-load"  holster and an "instance ready" holster. The "pre-load" is for when you first get into the instance. It will contain your pure essence, reraiser, and actions that you will slot in or refresh charges on.
+The "instance ready" holster has _everything_ you will need for the entire instance. It should often contain extra reraisers, spare copies of lost actions you need, and light curtains. It is strongly encouraged that you fill your holster to as close as full as you can.
+
+Some suggestions on what to include to fill space: **Light Curtains**, extra **Resistance Reraisers**, and **Resistance Potions**.
+
+:::note[Pure Essences]
+You will only need **one** pure essence each time you enter Delubrum Reginae. Essences do persist through death and are only removed if you remove the buff yourself or you leave the instance.
+:::
+<br/><hr/>
+
+### Basic Aethershield Tank Holster
+text
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/hsac.png"/></td>
+      <td colspan="3">**Banner of Honored Sacrifice**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td >**Lost Font of Power**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td>**Lost Shell 2**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/sac.png"/></td>
+      <td>**Lost Sacrifice**</td>
+      <td>1</td>
+      <td>19</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>92</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Basic Off Tank Holster
+text
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/hsac.png"/></td>
+      <td colspan="3">**Banner of Honored Sacrifice**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td >**Lost Font of Power**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+        <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/hsac.png"/></td>
+      <td >**Banner of Honored Sacrifice**</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield\***</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>4</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/sac.png"/></td>
+      <td>**Lost Sacrifice**</td>
+      <td>1</td>
+      <td>19</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>96</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Blood Rage Aethershield Tank
+text
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td >**Lost Blood Rage**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td>**Lost Shell 2**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/sac.png"/></td>
+      <td>**Lost Sacrifice**</td>
+      <td>1</td>
+      <td>19</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>92</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Blood Rage Off Tank
+text
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td >**Lost Font of Power**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td >**Lost Blood Rage**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield\***</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/sac.png"/></td>
+      <td>**Lost Sacrifice**</td>
+      <td>1</td>
+      <td>19</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>95</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Lynn's Chad Main Tank Bag
+You like being the main character? So do I.
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/sac.png"/></td>
+      <td>**Lost Sacrifice**</td>
+      <td>2</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraise.png"/></td>
+      <td>**Lost Reraise**</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/aethershield.png"/></td>
+      <td>**Lost Aethershield**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/shell2.png"/></td>
+      <td>**Lost Shell 2**</td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dispel.png"/></td>
+      <td>**Lost Dispel**</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Impetus Blood Rage
+lol, lmao
+
+<div class="two-holster-tables">
+  <table class="tank">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td colspan="3">**Lost Blood Rage**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/indom.png"/></td>
+      <td colspan="3">**Pure Essence of the Indomitable**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="tank">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/bloodrage.png"/></td>
+      <td >**Lost Blood Rage**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/impetus.png"/></td>
+      <td>**Lost Impetus**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>95</td>
+    </tr>
+  </table>
+</div>
+
+<Footer />

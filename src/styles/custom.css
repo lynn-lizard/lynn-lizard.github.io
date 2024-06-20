@@ -73,6 +73,19 @@ table.caster{
 	}
 }
 
+table.tank{
+	th{
+		background-color: rgb(53, 87, 210);
+	}
+}
+
+table.healer{
+	th{
+		background-color: rgb(76, 158, 67);
+	}
+}
+
+
 .hidden-right-border{
 	border-right: hidden;
 }
