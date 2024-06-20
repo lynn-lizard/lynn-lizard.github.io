@@ -59,7 +59,18 @@ table.dps{
 	th{
 		background-color: rgb(175, 35, 35);
 	}
+}
 
+table.phys{
+	th{
+		background-color: rgb(212, 183, 42);
+	}
+}
+
+table.caster{
+	th{
+		background-color: rgb(99, 46, 167);
+	}
 }
 
 .hidden-right-border{

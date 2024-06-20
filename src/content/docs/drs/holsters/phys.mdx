@@ -1,6 +1,370 @@
 ---
 title: Physical Ranged Holsters
-description: hehe dnc go brrr
+description: Dervish Bringers and Cure 2 Bots
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+Physical Ranged DPS will commonly bring **Lost Dervish** to help provide the raid with a strong crit/damage buff that lasts for 60 seconds. Along with this, they bring **Font of Power** to help supplement their personal damage. Both actions should be used during the **2 minute** raid buff window. 
+This will help maximize the yours and the party's DPS output.
+
+Each holster is split into two sections, one as a "pre-load"  holster and an "instance ready" holster. The "pre-load" is for when you first get into the instance. It will contain your pure essence, reraiser, and actions that you will slot in or refresh charges on.
+The "instance ready" holster has _everything_ you will need for the entire instance. It should often contain extra reraisers, spare copies of lost actions you need, and light curtains. It is strongly encouraged that you fill your holster to as close as full as you can.
+
+Some suggestions on what to include to fill space: **Light Curtains**, extra **Resistance Reraisers**, and **Resistance Potions**.
+
+Your **Pure Essence of the Fiendhunter** synergizes with **Lost Cure 2** (the single target instant heal action) to give the **Refresh** buff to your target. Refresh, which in short, is a Lucid Dreaming on steroids. However, it does apply stacks of Slow which increases your recast time (or time between GCDs). It is not advised for new players to bring
+this action at all. While it may look simple, it could be distracting when trying to learn the fights.
+
+:::note[Pure Essences]
+You will only need **one** pure essence each time you enter Delubrum Reginae. Essences do persist through death and are only removed if you remove the buff yourself or you leave the instance.
+:::
+<br/><hr/>
+
+### Basic Physical Ranged Holster
+The basline ranged holster. Packing both **Font of Power** and **Dervish** for the whole instance as it's just that shrimple. As a reminder, please make sure to drift **Dervish** into the 2 minute buff window as you want to stack
+as many buffs as possible into that short timeframe.
+
+<div class="two-holster-tables">
+  <table class="phys">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dervish.png"/></td>
+      <td colspan="3">**Lost Dervish**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fiendhunter.png"/></td>
+      <td colspan="3">**Pure Essence of the Fiendhunter**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="phys">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td >**Lost Font of Power**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dervish.png"/></td>
+      <td>**Lost Devish**</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>7</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>93</td>
+    </tr>
+  </table>
+</div>
+<br/><hr/>
+
+### Beginner Mimic Holster
+This holster will help you understand the signifigance and power of the **Mimic** action. It also has some extra wiggle room to maybe try out "Excellence Chaining". The main goal is for you to just see how **Mimic** works.
+If you're looking for guides on how to Mimic, please see the note below the holsters. If you're looking for a guide on how to Excellence Chain, please see: \<link goes here\>
+
+<div class="two-holster-tables">
+  <table class="phys">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/dervish.png"/></td>
+      <td colspan="3">**Lost Devish**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fiendhunter.png"/></td>
+      <td colspan="3">**Pure Essence of the Fiendhunter**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="phys">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/dervish.png"/></td>
+      <td>**Lost Devish**</td>
+      <td>2</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>6</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>94</td>
+    </tr>
+  </table>
+</div>
+:::caution[How To Mimic]
+<ActionIcon icon="mimic"/>**Mimic** is used to copy the actions of another player _and_ fully refresh your actions at the same time! To use it, first slot in <ActionIcon icon="mimic"/>**Mimic** and target the player you wish to copy the actions from.
+**Before you use <ActionIcon icon="mimic"/>Mimic**, double check their **Reminiscence** buff! Doing this will ensure you are getting the correct actions. Once ready, use <ActionIcon icon="mimic"/>**Mimic!** After a nifty animation, you'll recieve **both** actions the target had and full charges of both!
+
+**Extra note:** The target will not be effected in anyway. This is how many Delubrum Savage reclears will often smuggle heavier action combinations through the entire instance.
+:::
+<br/><hr/>
+
+### Excellence Dervish
+This is truly the easiest and most effective way to output as much DPS as you can on **any role**, outside of one exception. While this is a rather heavy and expensive bag, it's effects cannot be understated. Mimic is used before every major Non-Trinity Seeker fight to
+refresh **Font of Power** and get **Lost Excellence** back. 
+
+During the opener, you will press **Lost Excellence** after your first GCD. You will open your holster, select **Lost Devish**, and slot it [the banner] over Excellence. Once done, you can press **Font of Power** and **Lost Devish**
+together. From there, the fight will proceed as normal with you pressing Font/Banner during every **2 minute** raid buff window.
+
+It is important that you overslot **Excellence** with your **Lost Devish**. Holding **Excellence** through the whole instance is a massive DPS loss and also could potentially waste the assigned batteries's Excellence plates. 
+
+**Reminder:** Mimic does not work in combat.
+<div class="two-holster-tables">
+  <table class="phys">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/excellence.png"/></td>
+      <td colspan="3">**Lost Excellence**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fiendhunter.png"/></td>
+      <td colspan="3">**Pure Essence of the Fiendhunter**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="phys">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>3</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/dervish.png"/></td>
+      <td>**Lost Devish**</td>
+      <td>4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>2</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>94</td>
+    </tr>
+  </table>
+</div>
+
+:::tip[Free Dervish time? Yes please!]
+Instead slotting **Mimic** over **Dervish** consider putting it over your **Font of Power** instead! This way you can press use **Dervish** during the countdown and _then_ mimic your correct actions before engaging. This 
+will extend the dervish window significantly and reduce a lot of the stress of overslotting buffs quickly!
+
+Remember, **Mimic** does not work in combat!
+:::
+
+<br/><hr/>
+
+### Physical Excellence Battery
+This holster helps carry **Lost Excellence** through the entire instance. Three players will be volunteer/assigned to carry an extra plate of Excellence to slot in at an assigned fight.
+One will carry it for Queen's Guard, Trinity Avowed, and The Queen. Once you have arrived at your assigned fight: slot in **Lost Excellence** over **Lost Devish** (keeping **Font of Power** still) and inform the raid with a message or marking yourself with a triangle head marker to
+signify that you are ready to be mimicked.
+
+During the opener, you will press **Lost Excellence** after your first GCD. You will open your holster, select **Lost Devish**, and slot it [Dervish] over Excellence. Once done, you can press **Font of Power** and **Lost Devish**
+together. From there, the fight will go on with you pressing Font/Dervish during every **2 minute** raid buff window as you normally would.
+<div class="two-holster-tables">
+  <table class="phys">
+  <caption>**Pre-load**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="4">Lost Action</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fop.png"/></td>
+      <td colspan="3">**Lost Font of Power**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/excellence.png"/></td>
+      <td colspan="3">**Lost Excellence**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/fiendhunter.png"/></td>
+      <td colspan="3">**Pure Essence of the Fiendhunter**</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="40" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td colspan="3">**Resistance Reraiser**</td>
+    </tr>
+  </table>
+
+  <table class="phys">
+  <caption>**Instance Ready**</caption>
+      <col width="60px" />
+      <col width="275px" />
+      <col width="20px" />
+      <col width="20px" />
+    <tr>
+      <th colspan="2">Lost Action</th>
+      <th>Qty.</th>
+      <th>Wt.</th>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/mimic.png"/></td>
+      <td>**Mimic**</td>
+      <td>2</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/excellence.png"/></td>
+      <td>**Lost Excellence**</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/dervish.png"/></td>
+      <td>**Lost Devish**</td>
+      <td>4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/reraiser.png"/></td>
+      <td>**Resistance Reraiser**</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td><Image alt="icon" loading="eager" width="45" height="40" src="/drs/actions/curtain.png"/></td>
+      <td>**Light Curtain**</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr style="background-color: transparent">
+      <td style="border: none;"/>
+      <td colspan="2" style="text-align: right; border: none;">**Total Weight:**</td>
+      <td>99</td>
+    </tr>
+  </table>
+</div>
+
+:::danger[Slotting Excellence]
+Make sure to slot in your Excellence at the assigned fight! Slotting it any earlier could cause some awkwardness and force you to hold off on overslotting Excellence for an amount of time.
+:::
+
+<Footer />
