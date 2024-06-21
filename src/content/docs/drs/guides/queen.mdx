@@ -3,4 +3,39 @@ title: The Queen
 description: i can fix her
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+<Image
+    src="/drs/guides/queen.webp"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="Queen Cheatsheet"
+    onclick="window.open('/drs/guides/queen.webp','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+### Markers
+**Diamond Queen**
+```
+{"Name":"Old Queen","MapID":761,"A":{"X":-272.026,"Y":-175.0,"Z":-435.125,"ID":0,"Active":true},"B":{"X":-251.977,"Y":-175.0,"Z":-415.035,"ID":1,"Active":true},"C":{"X":-272.013,"Y":-175.0,"Z":-395.045,"ID":2,"Active":true},"D":{"X":-292.057,"Y":-175.0,"Z":-415.039,"ID":3,"Active":true},"One":{"X":-281.962,"Y":-175.0,"Z":-424.954,"ID":4,"Active":true},"Two":{"X":-262.016,"Y":-175.0,"Z":-425.036,"ID":5,"Active":true},"Three":{"X":-262.013,"Y":-175.0,"Z":-405.057,"ID":6,"Active":true},"Four":{"X":-282.033,"Y":-175.0,"Z":-404.97,"ID":7,"Active":true}}
+```
+
+**Battleship Queen**
+```
+{"Name":"Battleship Queen","MapID":761,"A":{"X":-282.022,"Y":-175.0,"Z":-439.992,"ID":0,"Active":true},"B":{"X":-271.999,"Y":-175.0,"Z":-440.0,"ID":1,"Active":true},"C":{"X":-261.999,"Y":-175.0,"Z":-440.026,"ID":2,"Active":true},"D":{"X":-251.978,"Y":-175.0,"Z":-440.012,"ID":3,"Active":true},"One":{"X":-297.008,"Y":-175.0,"Z":-424.997,"ID":4,"Active":true},"Two":{"X":-296.92,"Y":-175.0,"Z":-414.966,"ID":5,"Active":true},"Three":{"X":-296.794,"Y":-175.0,"Z":-404.975,"ID":6,"Active":true},"Four":{"X":-296.613,"Y":-175.0,"Z":-394.994,"ID":7,"Active":true}}
+```
+
+

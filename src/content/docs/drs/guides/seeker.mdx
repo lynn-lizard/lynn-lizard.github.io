@@ -3,4 +3,32 @@ title: Seeker
 description: The worst boss ever
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+<Image
+    src="/drs/guides/ts.png"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="Seeker Cheatsheet"
+    onclick="window.open('/drs/guides/ts.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+### Markers
+**Fight Markers**
+```
+{"Name":"Seeker","MapID":761,"A":{"X":-7.188,"Y":8.0,"Z":258.233,"ID":0,"Active":true},"B":{"X":18.563,"Y":8.0,"Z":271.795,"ID":1,"Active":true},"C":{"X":6.768,"Y":7.999,"Z":297.671,"ID":2,"Active":true},"D":{"X":-18.302,"Y":7.999,"Z":284.493,"ID":3,"Active":true},"One":{"X":-7.302,"Y":8.0,"Z":270.484,"ID":4,"Active":true},"Two":{"X":7.301,"Y":7.999,"Z":270.975,"ID":5,"Active":true},"Three":{"X":7.219,"Y":7.999,"Z":285.182,"ID":6,"Active":true},"Four":{"X":-7.144,"Y":7.999,"Z":285.096,"ID":7,"Active":true}}
+```

@@ -3,4 +3,37 @@ title: Slimes
 description: Slimey bois
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+<Image
+    src="/drs/guides/slimes.png"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="Queen Cheatsheet"
+    onclick="window.open('/drs/guides/slimes.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+### Markers
+**Setup Markers**
+```
+{"Name":"Slimes/Golems","MapID":761,"A":{"X":-275.0,"Y":-31.0,"Z":423.493,"ID":0,"Active":true},"B":{"X":-275.055,"Y":-31.0,"Z":437.146,"ID":1,"Active":true},"C":{"X":315.032,"Y":48.999,"Z":403.795,"ID":2,"Active":true},"D":{"X":315.021,"Y":48.999,"Z":414.553,"ID":3,"Active":true},"One":{"X":-279.496,"Y":-31.0,"Z":428.012,"ID":4,"Active":true},"Two":{"X":-270.519,"Y":-31.0,"Z":428.007,"ID":5,"Active":true},"Three":{"X":-279.514,"Y":-31.0,"Z":432.586,"ID":6,"Active":true},"Four":{"X":-270.417,"Y":-31.0,"Z":432.659,"ID":7,"Active":true}}
+```
+
+**Lowman Slimes/Golems Setup**
+```
+{"Name":"24p Slimes/Golems","MapID":761,"A":{"X":-4.48,"Y":38.0,"Z":465.472,"ID":0,"Active":true},"B":{"X":-4.5,"Y":37.999,"Z":474.482,"ID":1,"Active":true},"C":{"X":7.334,"Y":37.999,"Z":465.295,"ID":2,"Active":true},"D":{"X":7.516,"Y":37.999,"Z":473.644,"ID":3,"Active":true},"One":{"X":-7.932,"Y":37.999,"Z":467.847,"ID":4,"Active":true},"Two":{"X":-1.248,"Y":38.0,"Z":468.054,"ID":5,"Active":true},"Three":{"X":-7.782,"Y":37.999,"Z":472.373,"ID":6,"Active":true},"Four":{"X":-1.148,"Y":38.0,"Z":472.462,"ID":7,"Active":true}}
+```

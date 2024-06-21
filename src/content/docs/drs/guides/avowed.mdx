@@ -3,4 +3,32 @@ title: Trinity Avowed
 description: hot and ur cold
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+<Image
+    src="/drs/guides/ta.png"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="Avowed Cheatsheet"
+    onclick="window.open('/drs/guides/ta.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+### Markers
+**Fight Markers**
+```
+{"Name":"TA","MapID":761,"A":{"X":-271.969,"Y":-182.0,"Z":-102.04,"ID":0,"Active":true},"B":{"X":-252.021,"Y":-182.0,"Z":-82.126,"ID":1,"Active":true},"C":{"X":-272.012,"Y":-182.0,"Z":-61.993,"ID":2,"Active":true},"D":{"X":-291.9,"Y":-182.0,"Z":-82.012,"ID":3,"Active":true},"One":{"X":-282.003,"Y":-182.0,"Z":-92.017,"ID":4,"Active":true},"Two":{"X":-272.067,"Y":-182.0,"Z":-92.053,"ID":5,"Active":true},"Three":{"X":-272.063,"Y":-182.0,"Z":-82.054,"ID":6,"Active":true},"Four":{"X":-281.973,"Y":-182.0,"Z":-81.996,"ID":7,"Active":true}}
+```

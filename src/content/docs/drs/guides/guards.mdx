@@ -3,4 +3,37 @@ title: Queen's Guard
 description: The worst boss(es) ever
 ---
 
-WIP
+import ActionIcon from '@components/ActionIcon.astro'
+import { Image } from 'astro:assets';
+import Footer from "@components/Footer.astro";
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+<Image
+    src="/drs/guides/qg.png"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="Guards Cheatsheet"
+    onclick="window.open('/drs/guides/qg.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+### Markers
+**Reflector/Dispel Setup Markers**
+```
+{"Name":"QG Bridge Setup","MapID":761,"A":{"X":240.533,"Y":-88.0,"Z":-124.888,"ID":0,"Active":true},"B":{"X":243.88,"Y":-88.0,"Z":-121.4,"ID":1,"Active":true},"C":{"X":247.389,"Y":-88.0,"Z":-125.497,"ID":2,"Active":true},"D":{"X":248.561,"Y":-88.0,"Z":-121.073,"ID":3,"Active":true},"One":{"X":240.96,"Y":-88.0,"Z":-114.976,"ID":4,"Active":true},"Two":{"X":243.983,"Y":-88.0,"Z":-118.347,"ID":5,"Active":true},"Three":{"X":246.179,"Y":-88.0,"Z":-115.285,"ID":6,"Active":true},"Four":{"X":0.0,"Y":0.0,"Z":0.0,"ID":7,"Active":false}}
+```
+
+**Fight Markers**
+```
+{"Name":"QG","MapID":761,"A":{"X":244.052,"Y":-86.0,"Z":-177.773,"ID":0,"Active":true},"B":{"X":260.466,"Y":-86.0,"Z":-162.184,"ID":1,"Active":true},"C":{"X":244.064,"Y":-86.0,"Z":-145.87,"ID":2,"Active":true},"D":{"X":227.862,"Y":-86.0,"Z":-162.103,"ID":3,"Active":true},"One":{"X":232.756,"Y":-86.0,"Z":-173.218,"ID":4,"Active":true},"Two":{"X":255.425,"Y":-86.0,"Z":-173.46,"ID":5,"Active":true},"Three":{"X":255.482,"Y":-86.0,"Z":-150.456,"ID":6,"Active":true},"Four":{"X":232.621,"Y":-86.0,"Z":-150.622,"ID":7,"Active":true}}
+```
