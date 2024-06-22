@@ -1,0 +1,9 @@
+---
+import { Image } from 'astro:assets';
+
+const { icon, width="25", height="25" } = Astro.props;
+---
+
+<jobicon>
+    <Image alt=`${icon}` class="lost-action-icon" loading="eager" width=`${width}` height=`${height}` src=`/jobs/${icon}.png`` />
+</jobicon>
