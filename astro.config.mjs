@@ -11,7 +11,7 @@ export default defineConfig({
     title: 'NA Field Operations',
     social: {
       github: 'https://github.com/lynn-lizard/lynn-lizard.github.io',
-      discord: 'https://discord.gg/pebe'
+      discord: 'https://discord.gg/foexiv'
     },
     pagination: false,
     customCss: [
