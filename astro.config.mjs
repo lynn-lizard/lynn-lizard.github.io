@@ -109,35 +109,16 @@ export default defineConfig({
       },
       {
         label: 'South Horn',
-        collapsed: true,
-        items: [{
-          label: 'New Player Guide',
-          link: '/crescent/south/newplayer'
-        }, {
-          label: 'FATEs and CEs',
-          link: '/crescent/south/combat'
-        }, {
-          label: 'Phantom Jobs',
-          link: '/crescent/south/pjobs'
-        }, {
-          label: 'Pots',
-          link: '/crescent/south/pots'
-        }]
+        link: '/crescent/southhorn'
+      },
+      {
+        label: 'Phantom Weapons',
+        link: '/crescent/ocrelics'
       },
       {
         label: 'Forked Tower: Blood',
-        collapsed: true,
-        items: [{
-          label: 'Overview',
-          link: '/crescent/ftb/overview'
-        }, {
-          label: 'Encounter Guides',
-          link: '/crescent/ftb/fights'
-        }, {
-          label: 'In-depth Phantom Job Guides',
-          link: '/crescent/ftb/pjobs'
-        }]
-      }
+        link: '/crescent/ftb'
+      },
     ]
     }, {
       // Credits
