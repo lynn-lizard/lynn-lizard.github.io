@@ -1,12 +1,23 @@
 :root[data-theme="dark"] {
 	/* Sidebar color */
-	--sl-color-gray-6: hsl(200, 5%, 11%);
+	/* --sl-color-gray-6: hsl(200, 5%, 11%); */
 	/* Content background color */
-	--sl-color-bg: hsl(240, 2%, 13%);
+	/* --sl-color-bg: hsl(240, 2%, 13%); */
 	/* Font color */
 	--sl-color-white: hsl(0, 0%, 97%);
 	/* Main Content Width */
 	--sl-content-width: 80%;
+	--sl-font: 'Comfortaa', system-ui
+}
+
+/* comfortaa-latin-wght-normal */
+@font-face {
+  font-family: 'Comfortaa Variable';
+  font-style: normal;
+  font-display: block;
+  font-weight: 300 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/comfortaa:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 .lost-action-icon{

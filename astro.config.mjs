@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import mdx from "@astrojs/mdx";
+import starlightThemeNext from 'starlight-theme-next'
+import '@fontsource-variable/comfortaa';
 
 import icon from "astro-icon";
 
@@ -8,15 +10,22 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://lynn-lizard.github.io',
   integrations: [starlight({
+    plugins: [starlightThemeNext()],
     title: 'NA Field Operations',
-    social: {
-      github: 'https://github.com/lynn-lizard/lynn-lizard.github.io',
-      discord: 'https://discord.gg/foexiv'
-    },
+    social: [
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/foexiv' },
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/lynn-lizard/lynn-lizard.github.io',
+        },
+      ],
     pagination: false,
     customCss: [
     // Relative path to your custom CSS file
-    './src/styles/custom.css'],
+    './src/styles/custom.css',
+    '@fontsource/comfortaa/400.css'
+  ],
     sidebar: [{
       // Home Page
       label: 'Home',
