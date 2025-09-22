@@ -31,7 +31,6 @@ export default defineConfig({
         label: 'Lost Actions for Beginners',
         link: '/drs/actions'
       },
-      // A nested group of links for seasonal constellations.
       {
         label: 'Holsters',
         collapsed: true,
@@ -93,12 +92,44 @@ export default defineConfig({
         link: '/drs/hosting'
     }]
     }, {
-      // Shade's Triangle
-      label: 'Shade\'s Triangle',
+      // Occult Crescent
+      label: 'Occult Crescent',
       items: [{
-        label: 'Coming in 7.0!!',
-        link: '/triangle/overview'
-      }]
+        label: 'Overview',
+        link: '/crescent/overview'
+      },
+      {
+        label: 'South Horn',
+        collapsed: true,
+        items: [{
+          label: 'New Player Guide',
+          link: '/crescent/south/newplayer'
+        }, {
+          label: 'FATEs and CEs',
+          link: '/crescent/south/combat'
+        }, {
+          label: 'Phantom Jobs',
+          link: '/crescent/south/pjobs'
+        }, {
+          label: 'Pots',
+          link: '/crescent/south/pots'
+        }]
+      },
+      {
+        label: 'Forked Tower: Blood',
+        collapsed: true,
+        items: [{
+          label: 'Overview',
+          link: '/crescent/ftb/overview'
+        }, {
+          label: 'Encounter Guides',
+          link: '/crescent/ftb/fights'
+        }, {
+          label: 'In-depth Phantom Job Guides',
+          link: '/crescent/ftb/pjobs'
+        }]
+      }
+    ]
     }, {
       // Credits
       label: 'Other',
