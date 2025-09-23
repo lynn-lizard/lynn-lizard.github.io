@@ -104,8 +104,8 @@ export default defineConfig({
       // Occult Crescent
       label: 'Occult Crescent',
       items: [{
-        label: 'Overview',
-        link: '/crescent/overview'
+        label: 'Occult Crescent',
+        link: '/crescent/occult'
       },
       {
         label: 'South Horn',

@@ -1,0 +1,112 @@
+---
+title: Occult Crescent
+description: 7.0 Field Operations
+---
+
+import { Aside } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import Footer from '@components/Footer.astro'
+
+
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
+Occult Crescent was released in 7.25 is Dawntrail's featured Field Operation similar to the likes of Eureka and Bozja. You will explore the island known as Shades' Triangle which takes inspiration from
+the legend of the real-world Bermueda Triangle. Occult Crescent draws parallels from the myths that many ships and explorers alike seem to go missing out of thin air but with the added notion of 
+treasure and glory to be earned from conquering the Triangle.
+
+### Phantom Jobs
+While exploring the Occult Crescent you can equip various Phantom Jobs that will augment your playstyle in supportive, defensive, or offense ways.
+There are currently 13 available phantom jobs to level and master, each with their own gimmick. With future patches (7.45 and 7.55) more Phantom Jobs will become available to the player.
+
+### In-Zone Leveling
+Similar to Eureka/Bozja there is a separate leveling system, two this time actually. 
+
+There is your <u>Knowledge Level</u> acting as your overall, more general experience level gained from completing
+FATEs, Critical Engagements, and even chaining together mob kills at and/or around your or your party's overall level. This currently goes maxes out at 20 and only affects what mobs will or will not
+be aggressive when being near them. Your knowledge level also dictates which mobs are chainable by your party. If you wish to chain but your party's levels are all over the place, the party leader can choose
+to sync everyone's levels; allow chaining to be possible.
+
+And there is a <u>Phantom Job Level</u> which is specific to the phantom job
+you currently have equipped. Leveling phantom jobs will not only unlock or upgrade your phantom actions but fully leveling, or "mastering", a phantom job will grant you a stacking mastery bonus for every mastered
+phantom job. This mastery bonus will increase both your damage and healing potency by 2% for each stack.
+
+### FATEs and CEs
+Occult also draws parallels to Bozja in that there are smaller, faster encounters using the FATE system and then larger, more intense battles through Critical Engagements (CEs). It further mixes Eureka and Bozja
+together by allowing certain CEs to be "prepped" by killing a specific mob on the off chance it spawns an encounter. Currently, the CEs are mixed in that some spawn overtime and others spawn by prepping.
+- [South Horn Critical Engagements](/crescent/southhorn#critical-engagements)
+- [South Horn FATEs](/crescent/southhorn#FATEs)
+
+### Mob Chaining
+Mob Chaining returns in Occult Crescent. Chaining is when you kill mobs of a certain level within a window of time between each kill. The window of time shrinking as the chain grows longer, but the rewards
+improving the higher your chain goes. Currently, to chain mobs you must kill mobs higher than your party's average level. The level of mob required going up with each additional party member. This caps around 
+7 or 8 levels higher when you reach an 8-member party. Currently, chaining only rewards Enlightenment Gold Pieces, Knowledge Level XP, and Phantom Job XP.
+
+<div style="display:flex; justify-content: center;">
+| Party Size | Enemy Level |
+| :----------: | :-----------: |
+| Solo       | 2 levels above |
+| 2       | 3 levels above |
+| 3-4       | 4-5 levels above |
+| 5-6       | 6-7 levels above |
+| 7-8       | 7-8 levels above |
+</div>
+
+### Treasure Coffers
+Around Occult Crescent you will find randomly coffers spread around the various landscapes. These coffers come in two varities: Bronze and Silver. 
+Both contain mounts, hairstyles, materia, party favors, materials required for gear progression, and so much more.
+These are spawned in by doing things such as completing FATEs, CEs, clearing Forked Tower: Blood (South Horn Specific), and earning gold pieces from killed mobs.
+
+<div style="display:flex; justify-content: center;">
+| Activity | Bronze Spawn % | Silver Spawn % | 
+| :------------: | :-----------: | :----------:
+| FATEs     | 75%       | 7.5% |
+| CEs       | 100%      | 7.5% |
+| Chaining  | 10%       | 1% |
+| FT: Blood | 2 always  | 1 spawns, 10% for another |
+</div>
+
+
+:::note[Coffer Drop Rates]
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=1&coffer=1596" target="_blank">Infi's Gacha Website</a> to see what items can drop from both kinds of coffers and how rare each item is from
+their respective coffer.
+:::
+
+### Persistent Pots
+Similar to Eureka Bunnies, the Persistent and Pleading Pots FATEs, that when completed succesfully, will grant you extra special rewards if you are lucky to obtain a magical elixir. Using the elixir and
+ensuring the Persistent Pot companion you just obtained does not die, the pot will guide around to a hidden coffer. These coffers are either bronze, silver and gold. Each one rarer than the last but containing
+more and more rewards. As of 7.3, pots will now give both enlightenment silver and gold pieces from opening their coffers. 
+- Bronzes (50% spawn) will grant 100 silver, 160 gold
+- Silvers (40% spawn) will grant 300 silver, 480 gold
+- Golds (10% spawn) will grant 1000 silver, 1600 gold
+
+On rare occasions (~10% of the time), the pot companion will stick around and will offer to take you to *another* hidden coffer. You should take them up on this offer because these 
+"double ups" will **always** garauntee a gold coffer.
+
+:::tip[Pots Drop Rates]
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=2&coffer=2014743" target="_blank">Infi's Gacha Website</a> o see what items can drop from both kinds of coffers and how rare each item is from
+their respective coffer.
+:::
+
+### Fortune Carrots
+The Happy Bunnies do make a grand return in the form of Fortune Carrots. Sometimes when exploring around Occult Crescent you will run across a half-eaten, glowing carrot on the ground.
+If you are so lucky enough to have a Fortune Carrot item in your inventory, you can use this near said floor-carrot to spawn a Happy Bunny who will thank you with a golden coffer!
+This coffer contains materia, 1,000 Enlightenment Silver Pieces, and 1,600 Enlightenment Gold Pieces.
+
+Currently, Fortune Carrots *only* drop from the random bronze coffers that appear around
+Occult Crescent, from Persistent Pot coffers, or you could get refunded a carrot from the bunny coffer you just opened!
+
+:::caution[Bunny Coffer Drop Rates]
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=3&coffer=2012936" target="_blank">Infi's Gacha Website</a> o see what items can drop from both kinds of coffers and how rare each item is from
+their respective coffer.
+:::
+
+
+### Gearing and Best in Slot
+text
