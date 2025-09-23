@@ -10,8 +10,9 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://lynn-lizard.github.io',
   integrations: [starlight({
+    pagefind: false,
     plugins: [starlightThemeNext()],
-    title: 'NA Field Operations',
+    title: 'N.A. Field Operations',
     social: [
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/foexiv' },
         {
@@ -21,6 +22,10 @@ export default defineConfig({
         },
       ],
     pagination: false,
+    components: {
+      ThemeProvider: './src/components/ForceDarkTheme.astro',
+      ThemeSelect: './src/components/EmptyComponent.astro',
+    },
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css',
@@ -31,6 +36,10 @@ export default defineConfig({
       label: 'Home',
       link: '/'
     }, {
+        label: 'N.A. Discords',
+        link: '/others/discords'
+    },
+    {
       // Bozja/Delubrum
       label: 'Delubrum Reginae (Savage)',
       items: [{
@@ -104,7 +113,7 @@ export default defineConfig({
       // Occult Crescent
       label: 'Occult Crescent',
       items: [{
-        label: 'Occult Crescent',
+        label: 'General Information',
         link: '/crescent/occult'
       },
       {
@@ -119,17 +128,11 @@ export default defineConfig({
         label: 'Forked Tower: Blood',
         link: '/crescent/ftb'
       },
+      {
+        label: 'North Horn',
+        link: '/crescent/northhorn'
+      },
     ]
-    }, {
-      // Credits
-      label: 'Other',
-      items: [{
-        label: 'Credits',
-        link: '/others/credits'
-      }, {
-        label: 'Discords',
-        link: '/others/discords'
-      }]
     }]
   }), mdx(), icon()]
 });
