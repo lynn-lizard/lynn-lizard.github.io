@@ -117,12 +117,16 @@ export default defineConfig({
         link: '/crescent/occult'
       },
       {
-        label: 'South Horn',
-        link: '/crescent/southhorn'
+        label: 'Phantom Jobs',
+        link: '/crescent/pjobs'
       },
       {
         label: 'Phantom Weapons',
         link: '/crescent/ocrelics'
+      },
+      {
+        label: 'South Horn',
+        link: '/crescent/southhorn'
       },
       {
         label: 'Forked Tower: Blood',
