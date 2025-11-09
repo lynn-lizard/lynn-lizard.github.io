@@ -13,6 +13,7 @@ export default defineConfig({
     pagefind: false,
     plugins: [starlightThemeNext()],
     title: 'N.A. Field Operations',
+    routeMiddleware: './src/components/routeMiddleware.ts',
     social: [
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/foexiv' },
         {
@@ -27,7 +28,6 @@ export default defineConfig({
       ThemeProvider: './src/components/ForceDarkTheme.astro',
       ThemeSelect: './src/components/EmptyComponent.astro',
     },
-    routeMiddleware: 'src/routeMiddleware.ts',
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css',
