@@ -13,7 +13,7 @@ export default defineConfig({
     pagefind: false,
     plugins: [starlightThemeNext()],
     title: 'N.A. Field Operations',
-    routeMiddleware: './src/components/routeMiddleware.ts',
+    routeMiddleware: './src/components/routeData.ts',
     social: [
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/foexiv' },
         {
