@@ -27,7 +27,7 @@ export default defineConfig({
       ThemeProvider: './src/components/ForceDarkTheme.astro',
       ThemeSelect: './src/components/EmptyComponent.astro',
     },
-    routeMiddleware: './src/routeMiddleware.ts',
+    routeMiddleware: 'src/routeMiddleware.ts',
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css',
