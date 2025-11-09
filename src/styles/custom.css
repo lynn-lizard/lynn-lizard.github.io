@@ -7,25 +7,20 @@
 	--sl-color-white: hsl(0, 0%, 100%);
 	--sl-color-text: hsl(0, 0%, 85%);
 	/* Main Content Width */
-	--sl-content-width: 75rem;
+	/* --sl-content-width: 50rem; */
 	--sl-font: 'Comfortaa', system-ui
 }
 
 @media (min-width: 50em) {
 	:root {
-		--sl-content-width: 80%;
 		--sl-nav-height: 4rem;
 		--sl-nav-pad-x: 1.5rem;
-		--sl-text-h1: var(--sl-text-5xl);
-		--sl-text-h2: var(--sl-text-4xl);
-		--sl-text-h3: var(--sl-text-3xl);
-		--sl-text-h4: var(--sl-text-2xl);
 	}
 }
 
-@media (min-width: 72rem) {
+@media (min-width: 75rem) {
 	:root {
-		--sl-content-width: 20rem;
+		--sl-content-width: 50rem;
 		--sl-content-pad-x: 1.5rem;
 		--sl-mobile-toc-height: 0rem;
 	}
@@ -138,9 +133,9 @@ table.healer{
 	color: hsl(0, 0%, 70%);
 }
 
-.main-pane {
+/* .main-pane {
 	--sl-content-margin-inline: 10% !important;
-}
+} */
 
 .sidebar-content {
 	background-color: var(--sl-color-bg);
@@ -219,14 +214,7 @@ hr {
 	display: none !important;
 }
 
-/* Green Color for Tip on UWU page */
-.light-pillar-tip aside {
-	border-color: rgb(58, 151, 120);
-	background: rgb(15, 78, 57);
-	--sl-color-asides-text-accent: white;
-}
-
-/* Colors for the fights on the left sidebar */
+/* Colors for the ops on the left sidebar */
 :where(.ucob-sidebar):hover,
 :where(.ucob-sidebar)[aria-current="page"],
 :where(.ucob-sidebar)[aria-current="page"]:hover,
