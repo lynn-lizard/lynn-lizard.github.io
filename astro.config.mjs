@@ -22,6 +22,7 @@ export default defineConfig({
         },
       ],
     pagination: false,
+    expressiveCode: false,
     components: {
       ThemeProvider: './src/components/ForceDarkTheme.astro',
       ThemeSelect: './src/components/EmptyComponent.astro',
