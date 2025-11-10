@@ -25,6 +25,7 @@ export default defineConfig({
     pagination: false,
     expressiveCode: false,
     components: {
+      PageSidebar: './src/components/betterSideBar.astro',
       ThemeProvider: './src/components/ForceDarkTheme.astro',
       ThemeSelect: './src/components/EmptyComponent.astro',
     },
