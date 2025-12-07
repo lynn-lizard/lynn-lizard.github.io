@@ -2,28 +2,17 @@
 	/* Sidebar color */
 	/* --sl-color-gray-6: hsl(200, 5%, 11%); */
 	/* Content background color */
-	--sl-color-bg: hsl(240, 2%, 13%);
-	--sl-color-bg-nav: hsl(240, 2%, 13%);
+	--sl-color-bg: hsl(0, 0%, 5%);
+	--sl-color-bg-sidebar: var(--sl-color-bg);
+	--sl-nextjs-header-bg-color:  hsl(0, 0%, 11%);
 	/* Font color */
 	--sl-color-white: hsl(0, 0%, 100%);
 	--sl-color-text: hsl(0, 0%, 85%);
 	/* Main Content Width */
-	/* --sl-content-width: 55rem;
-	--sl-sidebar-width: 20rem;
-	--sl-sidebar-pad-x: 0; */
+	--sl-content-width: 55rem;
+	/* --sl-sidebar-width: 20rem; */
+	/* --sl-sidebar-pad-x: 0; */
 	--sl-font: 'Comfortaa', system-ui
-}
-
-.starlight-aside-right {
-  position: fixed;
-  top: var(--sl-header-height, 0);
-  right: 0;
-  height: calc(100vh - var(--sl-header-height, 0));
-  border-left: 1px solid var(--sl-color-border);
-  background: var(--sl-color-bg);
-  padding: 1rem;
-  overflow-y: auto;
-  z-index: 100;
 }
 
 .social-icons::after {
