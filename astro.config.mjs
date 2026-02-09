@@ -124,6 +124,10 @@ export default defineConfig({
         link: '/crescent/pjobs'
       },
       {
+        label: 'Gearing',
+        link: '/crescent/gearing'
+      },
+      {
         label: 'Phantom Weapons',
         link: '/crescent/ocrelics'
       },
