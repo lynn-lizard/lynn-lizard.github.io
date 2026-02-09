@@ -44,6 +44,7 @@ export default defineConfig({
     {
       // Bozja/Delubrum
       label: 'Delubrum Reginae (Savage)',
+      collapsed: true,
       items: [{
         label: 'Overview',
         link: '/drs/overview'
