@@ -116,8 +116,16 @@ export default defineConfig({
       // Occult Crescent
       label: 'Occult Crescent',
       items: [{
-        label: 'General Information',
+        label: 'General Occult Crescent',
         link: '/crescent/occult'
+      },
+      {
+        label: 'South Horn',
+        link: '/crescent/southhorn'
+      },
+      {
+        label: 'Forked Tower: Blood',
+        link: '/crescent/ftb'
       },
       {
         label: 'Phantom Jobs',
@@ -130,19 +138,7 @@ export default defineConfig({
       {
         label: 'Phantom Weapons',
         link: '/crescent/ocrelics'
-      },
-      {
-        label: 'South Horn',
-        link: '/crescent/southhorn'
-      },
-      {
-        label: 'Forked Tower: Blood',
-        link: '/crescent/ftb'
-      },
-      {
-        label: 'North Horn',
-        link: '/crescent/northhorn'
-      },
+      }
     ]
     }]
   }), mdx(), icon()]

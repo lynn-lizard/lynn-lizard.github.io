@@ -11,6 +11,14 @@ import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import Footer from '@components/Footer.astro'
 
+<link
+  rel="stylesheet"
+  media="(prefers-color-scheme:dark)"
+  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/dark.css"
+  onload="document.documentElement.classList.add('sl-theme-dark');"
+/>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+
 :::danger[*This section is still a work in progress*]
 While information is here and accurate enough to be deployed, the page is not yet totally completed. Please check back later to see a fully completed page!
 :::
@@ -22,46 +30,99 @@ Currently, to enter Occult Crescent you must have completed the questline start 
 on a combat job and have a minimum item level of 690. Occult Crescent does sync item levels to 700 as a note! So any materia on gear above i700 will be completely disabled. This is
 important for later when talking about the Field Op's gear progression.
 
+
+<sl-card class="card-basic ulti-summary">
+## Table of Contents
+- [**Phantom Jobs**](#phantom-jobs)
+- [**Leveling**](#leveling)
+- [**Gearing**](#gearing)
+- [**FATEs and CEs**](#fates-and-ces)
+- [**Mobs and Chaining**](#mobs-and-chaining)
+- [**Treasure Coffers**](#treasure-coffers)
+- [**Persistent Pots**](#persistent-pots)
+- [**Fortune Carrots**](#fortune-carrots)
+</sl-card>
+<br/><hr/>
+
 ## Phantom Jobs
-While exploring the Occult Crescent you can equip various Phantom Jobs that will augment your playstyle in supportive, defensive, or offense ways.
-There are currently 13 available phantom jobs to level and master, each with their own gimmick. With future patches (7.45 and 7.55) more Phantom Jobs will become available to the player.
+While exploring the Occult Crescent you can equip various Phantom Jobs that will augment your playstyle in supportive, defensive, and/or offense ways.
+There are currently 15 available phantom jobs to level and master, each with their own gimmick. With future patches (7.55) more Phantom Jobs will become available to us.
 
-To learn more about the different phantom jobs, please visit the page dedicated to it [here](/crescent/pjobs/)
+To learn more about the different phantom jobs, please visit the page dedicated to it [Phantom Jobs page](/crescent/pjobs/)
 
-<br></br>
-<hr></hr>
+<br/><hr/>
 
-## In-Zone Leveling
-Similar to Eureka/Bozja there is a separate leveling system, two this time actually. 
+## Leveling
+Similar to Eureka/Bozja there is an entirely different leveling system. This time there are two: Knowledge Level and Phantom Job Level.
 
-There is your <u>Knowledge Level</u> acting as your overall, more general experience level gained from completing
-FATEs, Critical Engagements, and even chaining together mob kills at and/or around your or your party's overall level. This currently goes maxes out at 20 and affects the following things: 
+### Knowledge Level
+<u>Knowledge Level</u> acts as your overall, more general experience level. Knowledge level experience is earned from completing
+FATEs, Critical Engagements, and chaining together mob kills at or above your or your party's overall level. 
+
+Knowledge level currently caps at 20 and affects the following things: 
 1. what mobs will or will not be aggressive when being near them. 
 2. How much damage you will take/recieve from mobs of a higher/level lower.
 3. Dictates which mobs are "chainable".
 
 If you wish to chain but your party member's levels are uneven, the party leader can choose to sync everyone's levels; allow chaining to be possible.
 
-And there is a <u>Phantom Job Level</u> which is specific to the phantom job
-you currently have equipped. Leveling phantom jobs will not only unlock or upgrade your phantom actions but fully leveling, or "mastering", a phantom job will grant you a stacking mastery bonus for every mastered
+#### Knowledge Level v. Mob Level - Damage Taken/Recieved
+Below is a chart that goes over how much damage you take and do to mobs of a certain level above your own as well as how that correlates to party size.
+<div style="display:flex; justify-content: center;">
+| Mob Level | Damage Done   | Damage Taken | Party Size |
+| :------:  | :-------: | :-----: | :------: |
+| +0 | 100% | 100% |
+| +1 | 100% | 105% |
+| +2 | 95% | 100% | Solo
+| +3 | 55% | 115% | 2 players
+| +4 | 35% | 450% | 3-4 players
+| +5 | 33% | 1100% | 3-4 players
+| +6 | 24% | 1200% | 5-6 players
+| +7 | 19% | 2000% | 5-8 players
+| +8 | 16% | 2200% | 7-8 players
+| +9 | 10% | 2500% |
+| +10 | 6% | 3000% |
+| +11 | 4% | 3500% |
+| +12 | 2% | 4000% |
+| >=13 | 1% | 4000% |
+</div>
+
+### Phantom Job Level
+Next is your <u>Phantom Job Level</u> which is specific to the phantom job you currently have equipped. Phantom Job experience can be earned from completing
+FATEs, Critical Engagements, and chaining together mob kills at or above your or your party's overall level.
+
+Leveling phantom jobs will not only unlock or upgrade your phantom actions but fully leveling, or "mastering", a phantom job will grant you a stacking mastery bonus for every mastered
 phantom job. This mastery bonus will increase both your damage and healing potency by 2% for each stack.
 
-<br></br>
-<hr></hr>
+<br/><hr/>
+## Gear Progression
+This Field Op we are currently able to obtain Arcanaut's gear and Occult Accessories. Both of these help you grow more powerful through stacking Special Attribute and bonus main stat (str, dex, mind, etc.) on those pieces
+of gear.
+
+Arcanaut's gear is purchased with silver and occult accessories can be rarely found when completeting critical encounters, opening coffers,
+finding gold pot chests, and fortune carrot chests.
+
+To read more about gearing, please [visit the page all about gearing](gearing)
+
+<br/><hr/>
 ## FATEs and CEs
-Occult also draws parallels to Bozja in that there are smaller, faster encounters using the FATE system and then larger, more intense battles through Critical Engagements (CEs). It further mixes Eureka and Bozja
-together by allowing certain CEs to be "prepped" by killing a specific mob on the off chance it spawns an encounter. Currently, the CEs are mixed in that some spawn overtime and others spawn by prepping.
+Occult also draws parallels to Bozja in that there are smaller, faster encounters using the FATE system and then larger, more intense battles through Critical Encounters (CEs). It further mixes Eureka and Bozja
+together by allowing certain CEs to be spawned, or "prepped", by killing a specific mobs to spawns specific Critical Encounters. Currently, CEs are mixed in that some automatically spawn and others spawn by players prepping mobs.
+
+FATEs and CEs can be found on your map in either blue (FATEs) or red (CEs) circles. A chime will play when a CE spawns as well.
 
 What's important to note is that your Knowledge/Phantom Job level does **NOT** matter when participating in FATES and CEs. Anyone of any level can join and reap full rewards that scale to their knowledge level.
 
-To join a FATE simply walk up and engage with the FATE boss present. To join a Critical Engagement you must walk to the designated area and stand in the glowing blue circle. After the 3 minute
+### Joining FATEs and CEs
+To join a FATE simply walk up and engage with the FATE boss present. 
+
+To join a Critical Encounter you must walk to the designated area and stand in the glowing blue circle. After a 3 minute
 recruitment period the CE will place everyone present into the encounter and begin combat.
-- [South Horn Critical Engagements](/crescent/southhorn#critical-engagements)
+- [South Horn Critical Encounters](/crescent/southhorn#critical-encounters)
 - [South Horn FATEs](/crescent/southhorn#FATEs)
 
-<br></br>
-<hr></hr>
-## Mob Chaining
+<br/><hr/>
+## Mobs and Chaining
 Mob Chaining returns in Occult Crescent. Chaining is when you kill mobs of a certain level within a window of time between each kill. The window of time shrinking as the chain grows longer, but the rewards
 improving the higher your chain goes. Currently, to chain mobs you must kill mobs higher than your party's average level. The level of mob required going up with each additional party member. This caps around 
 7 or 8 levels higher when you reach an 8-member party. Currently, chaining only rewards Enlightenment Gold Pieces, Knowledge Level XP, and Phantom Job XP.
@@ -76,10 +137,9 @@ improving the higher your chain goes. Currently, to chain mobs you must kill mob
 | 7-8           | 7-8 levels above |
 </div>
 
-<br></br>
-<hr></hr>
+<br/><hr/>
 ## Treasure Coffers
-Around Occult Crescent you will find randomly coffers spread around the various landscapes. These coffers come in two varities: Bronze and Silver. 
+Around Occult Crescent you will find randomly coffers spread around the Occult Crescent. These coffers come in two varities: Bronze and Silver. 
 Both contain mounts, hairstyles, materia, party favors, materials required for gear progression, and so much more.
 These are spawned in by doing things such as completing FATEs, CEs, clearing Forked Tower: Blood (South Horn Specific), and earning gold pieces from killed mobs.
 
@@ -117,8 +177,11 @@ Map showcases all possible spawn locations for the 8 silvers and 60 bronze locat
 <p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
 
 
-<br></br>
-<hr></hr>
+### Coffer Farming Routes
+For pre-made farming routes in South Horn, you can visit the [South Horn page's chest farming section](southhorn#chest-farming).
+
+
+<br/><hr/>
 ## Persistent Pots
 Similar to Eureka Bunnies, the Persistent and Pleading Pots FATEs, that when completed succesfully, will grant you extra special rewards if you are lucky to obtain a magical elixir. Using the elixir and
 ensuring the Persistent Pot companion you just obtained does not die, the pot will guide around to a hidden coffer. These coffers are either bronze, silver and gold. Each one rarer than the last but containing
@@ -185,6 +248,14 @@ You can visit <a href="https://gacha.infi.ovh/occult/?territory=3&coffer=2012936
 their respective coffer.
 :::
 
+### How Carrot Spawns Work
+- 2 Carrots can be on the map at a time at random, pre-determined spots
+  - These are per-instance, so you can leave instance and join a new one to get completely different carrot spots
+- These 2 carrots are visible by all players
+  - Light competition as anyone can visit a carrot spot and use it
+- If a player uses a carrot another will instantly respawn in a spot where there is not a carrot
+  - This includes the spot where a carrot *just* was (meaning you can chain together multiple - <a href="https://youtu.be/1P76wrOBgkc" target="_blank">Video of a carrot chain</a>)
+
 ### Fortune Carrots Locations
 Map showcases each pre-deteremined spot where a carrot could spawn.
 <Image
@@ -198,11 +269,3 @@ Map showcases each pre-deteremined spot where a carrot could spawn.
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
 <p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
-
-### How Carrot Spawns Work
-- 2 Carrots can be on the map at a time at random, pre-determined spots
-  - These are per-instance, so you can leave instance and join a new one to get completely different carrot spots
-- These 2 carrots are visible by all players
-  - Light competition as anyone can visit a carrot spot and use it
-- If a player uses a carrot another will instantly respawn in a spot where there is not a carrot
-  - This includes the spot where a carrot *just* was (meaning you can chain together multiple - <a href="https://youtu.be/1P76wrOBgkc" target="_blank">Video of a carrot chain</a>)
