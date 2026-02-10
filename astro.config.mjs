@@ -128,11 +128,11 @@ export default defineConfig({
         link: '/crescent/ftb'
       },
       {
-        label: 'Phantom Jobs',
+        label: 'Phantom Actions & Jobs',
         link: '/crescent/pjobs'
       },
       {
-        label: 'Gearing',
+        label: 'Gearing & Best In Slot',
         link: '/crescent/gearing'
       },
       {

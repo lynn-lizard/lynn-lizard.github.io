@@ -11,3 +11,76 @@ import Footer from '@components/Footer.astro'
 :::danger[*This section is still a work in progress*]
 While information is here and accurate enough to be deployed, the page is not yet totally completed. Please check back later to see a fully completed page!
 :::
+
+Phantom Jobs are this zone's gimmick simiarly to Wisdoms, Essences and Logos/Lost Actions. These act more like a more siloed version of the aforementioned system, not allowing for
+any mixing or matching of phantom actions (currently).
+
+## Phantom Actions
+Phantom Actions are the bread and butter of this content. Each action does something different. Whether it be a large amount of damage, removing buffs off enemies, buff your party members, or doing something more unique like allowing them
+to float off the ground. While most of them are very straight forward to understand, damage actions function in a specific way that does require explaining.
+
+### Damage Actions
+To start, these are the only factors that can influence your phantom action damage: 
+- Item Level
+- Phantom Mastery (~2% per stack)
+- Special Attribute (~1% per point of attribute)
+- % Buffs like Searing Light, Lance Charge, Standard/Technical Step, etc...
+- Certain traits like Enochain and Darkside
+  - Maim and Mend does **not** increase action damage.
+
+It is also worth noting that **phantom actions cannot critical hit or direct hit**. So things like Devilment, Battle Litany, and Chain Strategem will not work when trying to increase phantom action damage. 
+Similarly, main stat potions along with weakness/brink of death will **NOT** affect the damage of phantom actions. As phantom action potency does not scale off main stat but rather ilvl.
+
+#### Nerd Stuff for Damage Actions
+The formula for calculating your phantom action damage is follows 
+
+`[25115 x Potency/100]*Special Attribute]*Phantom Mastery]*Random ]`
+- `25115` is the base damage at ilvl 700
+- `Special Attribute` is `1.x`, x being the amount of attribute you have. (ex. `1.21` for  21 special attribute).
+- `Phantom Mastery` is `1.y`, y being the amount of mastery you have times 2 (ex. `1.30` for 15 mastery).
+- `Random` is the variance that goes changes the final value plus/minus 5% (`0.95`-`1.05`)
+
+The factors above will factor in multiplicatively into your phantom action damage as well. So using actions while in raid buff windows can see your damage increase by a lot!
+
+### Healing Actions
+Healing actions are much simplier than damage ones. The potency listed on the tooltip is the exact amount of healing you will recieve. Example being a max level Phantom Knight's pray will heal 5,000 potency per tick; 
+this will heal for 5,000 HP per tick.
+
+The healing potency of phantom actions is influenced by a similar list of factors like damage actions. However, **Special Attribute does not influence healing potency on phantom actions.** 
+
+### Shared Action Cooldowns
+Some phantom actions share cooldowns with each other, even if they aren't on the same Phantom Job. While an official reason is not known, we can assume its likely to prevent crazy amounts of buff stacking to be done
+by one person. There is a chart of the current phantom actions and which ones share a cooldown with each other.
+
+<Image
+    src="/oc/actioncds.png"
+    width="700"
+    height="500"
+    decoding="async"
+    loading="eager"
+    alt="actioncds"
+    onclick="window.open('/oc/actioncds.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+## Phantom Jobs
+Currently there are 15 different Phantom Jobs that the player can obtain and level. By default, everyone starts as a Phantom Freelancer and unlocks Knight, Bard, and Monk almost immediately while progressing the Occult Crescent MSQ.
+
+The currently available jobs are
+- Phantom Knight
+- Phantom Monk
+- Phantom Thief
+- Phantom Samurai
+- Phantom Berserker
+- Phantom Ranger
+- Phantom Time Mage
+- Phantom Chemist
+- Phantom Geomancer
+- Phantom Bard
+- Phantom Oracle
+- Phantom Cannoneer
+- Phantom Mystic Knight
+- Phantom Dancer
+- Phantom Gladiator
+- Phantom Freelancer
