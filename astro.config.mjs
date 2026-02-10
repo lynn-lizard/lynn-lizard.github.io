@@ -13,6 +13,7 @@ export default defineConfig({
     pagefind: false,
     plugins: [starlightThemeNext()],
     title: 'N.A. Field Operations',
+    favicon: '/field_ops.png',
     routeMiddleware: './src/components/routeData.ts',
     social: [
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/foexiv' },
@@ -120,22 +121,6 @@ export default defineConfig({
         link: '/crescent/occult'
       },
       {
-        label: 'South Horn',
-        link: '/crescent/southhorn'
-      },
-      {
-        label: 'Forked Tower: Blood',
-        collapsed: true,
-        items: [{
-        label: 'Overview',
-        link: '/crescent/ftb'
-        },
-        {
-          label: 'Encounters Guides',
-          link: '/crescent/ftb_encs'
-        }]
-      },
-      {
         label: 'Phantom Actions & Jobs',
         link: '/crescent/pjobs'
       },
@@ -144,8 +129,24 @@ export default defineConfig({
         link: '/crescent/gearing'
       },
       {
-        label: 'Phantom Weapons',
+        label: 'Phantom Weapons Quests',
         link: '/crescent/ocrelics'
+      },
+      {
+        label: 'South Horn',
+        link: '/crescent/southhorn'
+      },
+      {
+        label: 'Forked Tower: Blood',
+        collapsed: false,
+        items: [{
+        label: 'Overview',
+        link: '/crescent/ftb'
+        },
+        {
+          label: 'Boss Guides',
+          link: '/crescent/ftb_encs'
+        }]
       }
     ]
     }]
