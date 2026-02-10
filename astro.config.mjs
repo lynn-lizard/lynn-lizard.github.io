@@ -125,7 +125,15 @@ export default defineConfig({
       },
       {
         label: 'Forked Tower: Blood',
+        collapsed: true,
+        items: [{
+        label: 'Overview',
         link: '/crescent/ftb'
+        },
+        {
+          label: 'Encounters Guides',
+          link: '/crescent/ftb_encs'
+        }]
       },
       {
         label: 'Phantom Actions & Jobs',
