@@ -146,6 +146,10 @@ export default defineConfig({
         {
           label: 'Boss Guides',
           link: '/crescent/ftb_encs'
+        },
+        {
+          label: 'In-depth Phantom Job Guides',
+          link: '/crescent/ftb_pjobs'
         }]
       }
     ]
