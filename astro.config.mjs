@@ -129,7 +129,7 @@ export default defineConfig({
         link: '/crescent/gearing'
       },
       {
-        label: 'Phantom Weapons Quests',
+        label: 'Phantom Weapons (Relics)',
         link: '/crescent/ocrelics'
       },
       {
@@ -140,11 +140,11 @@ export default defineConfig({
         label: 'Forked Tower: Blood',
         collapsed: false,
         items: [{
-        label: 'Overview',
-        link: '/crescent/ftb'
+          label: 'Overview',
+          link: '/crescent/ftb'
         },
         {
-          label: 'Boss Guides',
+          label: 'Encounter Guides',
           link: '/crescent/ftb_encs'
         },
         {
