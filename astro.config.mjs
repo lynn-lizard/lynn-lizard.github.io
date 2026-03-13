@@ -137,6 +137,10 @@ export default defineConfig({
         link: '/crescent/southhorn'
       },
       {
+        label: 'North Horn Teasers',
+        link: '/crescent/northhorn'
+      },
+      {
         label: 'Forked Tower: Blood',
         collapsed: false,
         items: [{
