@@ -121,6 +121,10 @@ export default defineConfig({
         link: '/crescent/occult'
       },
       {
+        label: 'New Player Guide',
+        link: '/crescent/newplayer'
+      },
+      {
         label: 'Phantom Actions & Jobs',
         link: '/crescent/pjobs'
       },
