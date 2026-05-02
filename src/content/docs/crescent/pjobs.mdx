@@ -8,31 +8,30 @@ import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import Footer from '@components/Footer.astro'
 
-:::danger[*This section is still a work in progress*]
-While information is here and accurate enough to be deployed, the page is not yet totally completed. Please check back later to see a fully completed page!
-:::
-
-Phantom Jobs are this zone's gimmick simiarly to Wisdoms, Essences and Logos/Lost Actions. These act more like a more siloed version of the aforementioned system, not allowing for
-any mixing or matching of phantom actions (currently).
+Phantom Jobs are Occult Crescent’s core mechanic, similar to Logos and Lost Actions. These act as a more
+siloed version of the aforementioned systems, not currently allowing for any mixing or matching of actions  between Phantom Jobs. 
 
 ## Phantom Actions
-Phantom Actions are the bread and butter of this content. Each action does something different. Whether it be a large amount of damage, removing buffs off enemies, buff your party members, or doing something more unique like allowing them
-to float off the ground. While most of them are very straight forward to understand, damage actions function in a specific way that does require explaining.
+Phantom Actions are the core of combat in OC, covering familiar ground as Logos and Lost Actions, 
+such as pure damage actions like Zeninage, utility actions like Dispel and Suspend, beneficial buff 
+actions like Battle Bell and Hero’s Rime, as well as healing/shield actions like Unicorn. Most of these 
+actions are very straight forward to understand, though damage actions function in a specific way that does require explaining.
 
 ### Damage Actions
-To start, these are the only factors that can influence your phantom action damage: 
+To start, these are the only factors that can influence your Phantom Action damage:
 - Item Level
 - Phantom Mastery (~2% per stack)
 - Special Attribute (~1% per point of attribute)
-- % Buffs like Searing Light, Lance Charge, Standard/Technical Step, etc...
-- Certain traits like Enochain and Darkside
-  - Maim and Mend does **not** increase action damage.
+- % Buffs like Searing Light, Lance Charge, Standard/Technical Step, etc..
+- Certain traits like Enochian, and rotational buffs like Darkside and Surging Tempest.
+  - Maim and Mend does not increase action damage.
 
-It is also worth noting that **phantom actions cannot critical hit or direct hit**. So things like Devilment, Battle Litany, and Chain Strategem will not work when trying to increase phantom action damage. 
-Similarly, main stat potions along with weakness/brink of death will **NOT** affect the damage of phantom actions. As phantom action potency does not scale off main stat but rather ilvl.
+It is also worth noting that **Phantom Actions cannot critical hit or direct hit**, even if they display the `!!` like Gladiator’s *Finisher*. 
+This means that buffs like* Devilment, Battle Litany, and Chain Stratagem* will not increase Phantom Action damage. 
+Similarly, main stat does **not** affect Phantom Actions, meaning potions and weakness/brink of death will **NOT** affect their damage.
 
 #### Nerd Stuff for Damage Actions
-The formula for calculating your phantom action damage is follows 
+The formula for calculating your phantom action damage is:
 
 `[25115 x Potency/100]*Special Attribute]*Phantom Mastery]*Random]`
 - `25115` is the base damage at ilvl 700
@@ -40,17 +39,19 @@ The formula for calculating your phantom action damage is follows
 - `Phantom Mastery` is `1.y`, y being the amount of mastery you have times 2 (ex. `1.30` for 15 mastery).
 - `Random` is the variance that goes changes the final value plus/minus 5% (`0.95`-`1.05`)
 
-Raid buffs and other specific traits (enochain, darkside, etc.) will factor in multiplicatively into your phantom action damage as well. So using actions while in 2 minute raid buff windows can increase your damage by a lot!
+Raid buffs and other specific traits (enochian, darkside, etc.) will multiply your Phantom Action damage, so using actions 
+while in 2 minute raid buff windows will greatly increase your damage!
 
 ### Healing Actions
-Healing actions are much simplier than damage ones. The potency listed on the tooltip is the exact amount of healing you will recieve. Example being a max level Phantom Knight's pray will heal 5,000 potency per tick; 
-this will heal for 5,000 HP per tick.
+Healing actions are much simpler than damage ones. The potency listed on the tooltip is the exact amount of healing you will receive. For example,a max level Phantom Knight’s 
+Pray lists 5,000 potency per tick; which heals for 5,000 HP per tick.
 
-The healing potency of phantom actions is influenced by a similar list of factors like damage actions. However, **Special Attribute does not influence healing potency on phantom actions.** 
+The healing potency of Phantom Actions is influenced by % Increases like Damage Actions,, however, **Special Attribute does not influence healing potency on Phantom Actions**.
 
 ### Shared Action Cooldowns
-Some phantom actions share cooldowns with each other, even if they aren't on the same Phantom Job. While an official reason is not known, we can assume its likely to prevent crazy amounts of buff stacking to be done
-by one person. Below is a chart of the current phantom actions and which ones share a cooldown with each other.
+Some Phantom Actions share cooldowns with each other, even if they aren’t on the same Phantom Job. While an 
+official reason is not known, we can assume it is to prevent crazy amounts of buff stacking. Below is a chart 
+of how Phantom Actions share cooldowns, where all actions in a column share a cooldown:
 
 <Image
     src="/oc/actioncds.png"
@@ -65,11 +66,12 @@ by one person. Below is a chart of the current phantom actions and which ones sh
 <p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
 
 ### Macroing Phantom Actions
-Some phantom jobs have useful macros attached to make it easier to use their skills. To macro phantom actions you can use `/gaction "Phantom Action I"`. Replacing `I` with `I, II, III, IV, V` depending 
-on which slot the phantom action takes. You can also set up placeholders in the macros to help make targeting specific players easier.
+Some Phantom Jobs have useful macros attached to make it easier to use their skills. To macro phantom actions you can use `/gaction "Phantom Action I"`. 
+Replacing `I` with `I, II, III, IV, V` depending on which slot the Phantom Action takes.
+You can also set up placeholders in the macros to target specific players easier.
 
-If you want a full list of placeholders please visit the <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/text_command/placeholder/" target="_blank">Eorzea Database page for them.</a> Here are a 
-few quick examples for you:
+If you want a full list of placeholders, visit the <a href="https://na.finalfantasyxiv.com/lodestone/playguide/db/text_command/placeholder/" target="_blank">Eorzea Database page for them.</a> 
+Here are a few quick examples for you:
 - `<f>` for a focused target
 - `<bind1>` for a character marked with the Bind 1 head marker
 - `<attack1>` for a character marked with the Attack 1 head marker
@@ -81,22 +83,30 @@ few quick examples for you:
 If you want pre-made macros, you can visit the [in-depth phantom job guides](/crescent/ftb_pjobs) page for examples.
 
 ## Phantom Jobs
-Currently there are 15 different Phantom Jobs that the player can obtain and level. By default, everyone starts as a Phantom Freelancer and unlocks Knight, Bard, and Monk almost immediately while progressing the Occult Crescent MSQ.
+Currently, there are 15 different Phantom Jobs that the player can obtain and level. By default, everyone starts as a 
+Phantom Freelancer and unlocks Knight, Bard, and Monk almost immediately while progressing the Occult Crescent MSQ. 
+Some Phantom Jobs are purchased with silver and gold enlightenment pieces at the Expedition Antiquarian; other Phantom Jobs 
+come from specific CEs in the form of a Soul Shard that, when consumed, unlocks the shard’s specific job.
 
-The currently available jobs are
-- Phantom Knight
-- Phantom Monk
-- Phantom Thief
-- Phantom Samurai
-- Phantom Berserker
-- Phantom Ranger
-- Phantom Time Mage
-- Phantom Chemist
-- Phantom Geomancer
-- Phantom Bard
-- Phantom Oracle
-- Phantom Cannoneer
-- Phantom Mystic Knight
-- Phantom Dancer
-- Phantom Gladiator
-- Phantom Freelancer
+The currently available jobs are:
+
+- Starter/Quest Jobs:
+  - Phantom Knight
+  - Phantom Monk
+  - Phantom Freelancer
+  - Phantom Bard
+- Purchased with Silver:
+  - Phantom Time Mage
+  - Phantom Cannoneer
+  - Phantom Chemist
+  - Phantom Mystic Knight
+  - Phantom Dancer
+- Purchased with Gold:
+  - Phantom Samurai
+  - Phantom Geomancer
+  - Phantom Thief
+  - Phantom Gladiator
+- Drops from CEs:
+  - Phantom Berserker - Drops from “The Unbridled”
+  - Phantom Ranger - Drops from “The Black Regiment”
+  - Phantom Oracle - Drops from “On The Hunt”
