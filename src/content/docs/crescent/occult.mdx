@@ -18,13 +18,26 @@ import Footer from '@components/Footer.astro'
   onload="document.documentElement.classList.add('sl-theme-dark');"
 />
 <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
-Occult Crescent was released in 7.25 is Dawntrail's featured Field Operation similar to the likes of Eureka and Bozja. You will explore the island known as Shades' Triangle which takes inspiration from
-the legend of the real-world Bermueda Triangle.
+Occult Crescent was released in 7.25, and is Dawntrail’s featured Field Operation similar to the likes of Eureka and Bozja. You will explore the island known as Shades’ 
+Triangle which takes inspiration from the legend of the real-world Bermuda Triangle
 
-Currently, to enter Occult Crescent you must have completed the questline start with "One Last Hurrah" (starts in Tuliyollal (X:17.1, Y:11.8)) up to Umfamiliar Territory to unlock the South Horn. You must also be
-on a combat job and have a minimum item level of 690. Occult Crescent does sync item levels to 700 as a note! So any materia on gear above i700 will be completely disabled. This is
-important for later when talking about the Field Op's gear progression.
+To unlock the Occult Crescent you must have
+1. Completed the Dawntrail 7.0 MSQ
+2. Reached level 100 on any disciple of war or magic
+3. Have an item level of at least 690 or higher
 
+Currently, to enter Occult Crescent you must have completed the questline starting with <a href="https://ffxiv.consolegameswiki.com/wiki/One_Last_Hurrah" target="_blank">"One Last Hurrah"</a> 
+(starts in Tuliyollal (X:17.1, Y:11.8)) through <a href="https://ffxiv.consolegameswiki.com/wiki/Unfamiliar_Territory" target="_blank">“Unfamiliar Territory”</a> to unlock the South Horn. 
+
+To enter, you must talk to Jeffroy in the Phantom Village while being on a level 100 disciple of war or magic with your gear meeting a 690 item level minimum.
+
+When zoning in, two things are important to know.
+First, **The zone syncs to item level 700**, so any gear above 700 will sync down to that item level and any materia affixed on said gear will be disabled. This has some important implications for gear progression later on.
+Second, **you cannot gain any disciple of war/magic experience here**. Occult Crescent instead uses two different leveling systems that are explained further below.
+
+:::tip[New? Looking for a quick guide?]
+Check out the [new player's guide](/crescent/newplayer) for the quick run down on how to get easily started in the Occult Crescent!
+:::
 
 <sl-card class="card-basic ulti-summary">
 ## Table of Contents
@@ -39,41 +52,40 @@ important for later when talking about the Field Op's gear progression.
 </sl-card>
 <br/><hr/>
 
-:::note[New? Looking for a quick guide?]
-Check out the [new player's guide](/crescent/newplayer) for the quick run down on how to get easily started in the Occult Crescent!
-:::
-
 ## Phantom Jobs
-While exploring the Occult Crescent you can equip various Phantom Jobs that will augment your playstyle in supportive, defensive, and/or offense ways.
-There are currently 15 available phantom jobs to level and master, each with their own gimmick. Future patches (7.55) will add 8 more Phantom Jobs.
-
-To learn more about the different phantom jobs, please visit the page dedicated to it [Phantom Jobs page](/crescent/pjobs/)
+While exploring the Occult Crescent, you can equip various Phantom Jobs that will augment your playstyle in supportive, defensive, and/or offensive ways. 
+There are currently 15 available Phantom Jobs to level and master, each with their own gimmick. Future patches (7.55) will add 8 more Phantom Jobs.
+To learn more about the different Phantom Jobs, please visit [Phantom Jobs page](/crescent/pjobs/)
 
 <br/><hr/>
 
 ## Leveling
 Similar to Eureka/Bozja there is an entirely different leveling system. This time there are two: Knowledge Level and Phantom Job Level.
 
+:::note[Disciple of War/Magic EXP in Occult Crescent]
+Standard Job exp cannot be earned in Occult Crescent, only Knowledge Level exp and Phantom Job exp.
+:::
+
 ### Knowledge Level
-<u>Knowledge Level</u> acts as your overall, more general experience level. Knowledge level experience is earned from completing
-FATEs, Critical Encounters, and chaining together mob kills at or above your or your party's overall level. 
+<u>Knowledge Level</u> acts as your overall, more general experience level. Knowledge Level experience is earned from completing FATEs, Critical Encounters (CEs), or chaining together mob kills at or 
+above your or your party’s overall level.
 
-Knowledge level currently caps at 20 and affects the following things: 
-1. what mobs will or will not be aggressive when being near them. 
-2. How much damage you will take/recieve from mobs of a higher/level lower.
-3. Dictates which mobs are "chainable".
+Knowledge Level currently caps at 20 and affects the following things:
+1. What mobs will or will not be aggressive when near them.
+2. How much damage you will take/receive from mobs of a higher/lower level.
+3. Dictates which mobs are “chainable.”
 
-If you wish to chain but your party member's levels are uneven, the party leader can choose to sync everyone's levels; allow chaining to be possible.
+If you wish to chain but your party members’ levels are uneven, the party leader can choose to sync everyone’s levels; this will allow chaining to be possible.
+
 
 :::danger[Incapacitation Penality]
-If you are above level 5, dying and returning or leaving the instance without being revived will cause a loss in knowledge level exp. Your knowledge
-level can be decreased this way. The amount of knowledge exp lost is based on your level.
+If you are above level 5, dying and returning or leaving the instance without being revived will cause a loss in Knowledge Level and Knowledge EXP. The amount of Knowledge EXP lost is based on your level.
 
-Always shout for a raise if you can! However, the penalty for releasing is quite low. Often only needing a singular CE to regain the lost experience.
+Always shout for a raise if you can! However, the penalty for releasing is quite low. Often, you only need a singular CE to regain the lost experience.
 :::
 
 #### Knowledge Level v. Mob Level - Damage Taken/Recieved
-Below is a chart that goes over how much damage you take and do to mobs of a certain level above your own as well as how that correlates to party size.
+Below is a chart that goes over how much damage you take and do to mobs of a certain level above your own, as well as how that correlates to party size.
 <div style="display:flex; justify-content: center;">
 | Mob Level | Damage Done   | Damage Taken | Party Size |
 | :------:  | :-------: | :-----: | :------: |
@@ -94,64 +106,71 @@ Below is a chart that goes over how much damage you take and do to mobs of a cer
 </div>
 
 ### Phantom Job Level
-<u>Phantom Job Level</u> is specific to the phantom job you currently have equipped. Phantom job experience can be earned from completing
-FATEs, Critical Encounters, and chaining together mob kills at or above your or your party's overall level.
+<u>Phantom Job Level</u> is specific to the phantom job you currently have equipped. Phantom Job experience can be earned from completing FATEs, 
+CEs, and chaining together mob kills at or above your or your party’s overall level.
 
-Leveling phantom jobs will not only unlock or upgrade your phantom actions but fully leveling, or "mastering", a phantom job will grant you a stacking mastery bonus for every mastered
-phantom job. This mastery bonus will increase both your damage and healing potency by 2% for each stack.
+Leveling Phantom Jobs will not only unlock and upgrade your phantom actions but fully leveling, or “mastering,” a Phantom Job will grant you a stacking mastery bonus per mastered Phantom Job. 
+This mastery bonus will increase both your damage and healing potency by 2% for each stack. At this time, the maximum mastery bonus is 15.
+
+To learn more about the different phantom jobs, please visit the page dedicated to it [Phantom Jobs page](/crescent/pjobs/)
 
 <br/><hr/>
 ## Gear Progression
-Currently are can obtain the Arcanaut's gear and Occult Accessories. Both help you grow more powerful through their "Occult Crescent Effect" which grants 
-Special Attribute and bonus main stat (str, dex, mind, etc.).
+Currently, we can obtain the Arcanaut’s Gear and Occult Accessories. Both help you grow stronger through their “Occult Crescent Effect” which grants Special Attribute and bonus main stat (str, dex, mind, etc.).
 
-Arcanaut's gear is purchased with englightenment silver pieces from the Expedition Antiquarian in South Horn's base camp. Occult accessories can be rarely found when completeting critical encounters, opening coffers,
-finding gold pot chests, and fortune carrot chests.
+Arcanaut’s Gear is purchased with enlightenment silver pieces from the Expedition Antiquarian in South Horn’s base camp. Occult Accessories can rarely be found when completing CEs, 
+opening coffers, finding gold pot chests, and Fortune Carrot chests.
 
-To read more about gearing, please [visit the page all about gearing](/crescent/gearing)
+To read more about gearing and what is best for you, please [visit the page all about gearing](/crescent/gearing)
 
 ### Are the Occult Accessories right for you?
-Accessories are crazy rare drops from multiple sources in Occult Crescent, so weighing the option of keeping or selling is actually something to strongly consider.
-While they are expensive and could net you a nice lump of Gil, consider that they are a straight power gain for you while you’re in OC.
+Accessories are crazy rare drops from multiple sources in Occult Crescent, so weighing the option of keeping or selling 
+is something to strongly consider. While they are expensive and could net you a nice lump of gil, 
+you should consider that they are a straight power gain while in OC.
 
-Can start by asking yourself a few questions *Do you plan to spend a lot of time in OC? Especially planning on doing Forked Tower a lot? 
-Do you like doing big damage numbers? Or do you just want to get complete the content and GTFO?* 
+You can start by asking yourself a few questions: Do you plan to spend a lot of time in OC? Do you plan on doing Forked Tower a lot? 
+Do you like doing big damage numbers? Or do you just want to complete the content and GTFO?
 
-Accessories provide a +1-2% over increase to your damage (phantom mastery dependent) and will continue to increase in overall power value as we
-obtain more gear with the occult bonus and mastery. But, if you just want your collectibles and/or don’t enjoy the content, maybe it’s worth selling sooner rather than later. 
+Accessories provide a 1-2%  increase to your overall damage (phantom mastery dependent) and will continue to increase 
+in value as we obtain more gear with the occult bonus and mastery. However, if you just want your 
+collectibles and/or don’t enjoy the content, maybe it’s worth selling sooner rather than later.
 
-However, the final choice is on you.
+The final choice is yours.
 
 <br/><hr/>
 ## FATEs and CEs
-Occult also draws parallels to Bozja in that there are smaller, faster encounters using the FATE system and then larger, more intense battles through Critical Encounters (CEs). It further mixes Eureka and Bozja
-together by allowing certain CEs to be spawned, or "prepped", by killing a specific mobs to spawns specific Critical Encounters. Currently, CEs are mixed in that some 
-automatically spawn and others spawn by players prepping mobs.
+OC also draws parallels to Bozja in that there are smaller, faster encounters using the FATE system and larger, 
+more intense battles through Critical Encounters (CEs). It further mixes Eureka and Bozja together by allowing certain CEs to be spawned, or 
+“prepped,” by killing  specific mobs to spawn specific C Es. Currently, CEs are a mix of those that automatically spawn and others that spawn by players prepping mobs.
 
 FATEs and CEs can be found on your map in either blue (FATEs) or red (CEs) circles. A chime will play when a CE spawns as well.
 
-What's important to note is that your Knowledge/Phantom Job level does **NOT** matter when participating in FATES and CEs. Anyone of any level can join and reap full rewards that scale to their knowledge level.
+It’s important to note  that your Knowledge/Phantom Job Level does NOT matter when participating in FATES and CEs. 
+Anyone of any level can join and reap full rewards that scale to their knowledge level.
 
 ### Joining FATEs and CEs
-To join a FATE simply walk up and engage with the FATE boss present. 
+To join a FATE, simply walk up and engage with the FATE boss present.
 
-To join a Critical Encounter you must walk to the designated area and stand in the glowing blue circle. After a 3 minute
-recruitment period the CE will place everyone present into the encounter and begin combat.
+To join a CE, you must walk to the designated area and stand in the glowing blue circle. 
+After a 3 minute recruitment period, the CE will place everyone present into the encounter and begin combat.
 - [South Horn Critical Encounters](/crescent/southhorn#critical-encounters)
 - [South Horn FATEs](/crescent/southhorn#FATEs)
 
 ### Tracking FATEs and Critical Encounters
-You can use Infi's Occult Tracker website to help you keep track of which FATEs and CEs has spawned and which are still on the horizon. This site will also help you know which encounters drop what rewards 
-(notes, demiatmas, etc.) along with which CEs can be spawned by players. Detailing which mobs and where the mobs are located.
+You can use Infi’s Occult Tracker website to help you keep track of which FATEs and 
+CEs have spawned and which have not spawned. This site also helps you know which encounters 
+drop what rewards (notes, demiatmas, etc.) along with which CEs can be spawned by players. It also details where and which mobs are located.
 
 - <a href="https://tracker.infi.ovh/" target="_blank">Infi's Tracker Website</a>
 - <a href="https://ffxiv-occult.com/" target="_blank">Occult Tracker</a>
 
 <br/><hr/>
 ## Mobs and Chaining
-Mob Chaining returns in Occult Crescent. Chaining is when you kill mobs of a certain level within a window of time between each kill. The window of time shrinking as the chain grows longer, but the rewards
-improving the higher your chain goes. Currently, to chain mobs you must kill mobs higher than your party's average level. The level of mob required going up with each additional party member. This caps around 
-7 or 8 levels higher when you reach an 8-member party. Currently, chaining only rewards Enlightenment Gold Pieces, Knowledge Level XP, and Phantom Job XP.
+Mob chaining returns in Occult Crescent. Chaining is when you kill mobs of a certain level within a window 
+of time between each kill. The window of time shrinks as the chain grows longer, but the rewards improve the 
+higher your chain goes. Currently, to chain mobs, you must kill mobs higher than your party’s average level. 
+The level of mob required goes up with each additional party member. This caps around 7 or 8 levels higher when 
+you reach an 8-member party. Currently, chaining only rewards enlightenment gold pieces , Knowledge Level EXP, and Phantom Job EXP.
 
 <div style="display:flex; justify-content: center;">
 | Party Size    | Enemy Level |
@@ -164,17 +183,20 @@ improving the higher your chain goes. Currently, to chain mobs you must kill mob
 </div>
 
 :::tip[Mob Credit]
-Kill credit and rewards for mobs is only given to the party/person who attacks or aggros the mob first. 
+Kill credit and rewards for mobs is only given to the party/person who attacks or aggros the mob first.
 :::
 
 ### Mob Farming
-Farming mobs is one of the few ways to get Enlighenment Gold Pieces in the South Horn. You can find the mob farming guide on the [South Horn page under the Gold Farming section](/crescent/southhorn#gold-farming).
+Farming mobs is one of the few ways to get enlightenment gold pieces in the South Horn. You can find the mob farming guide for each zone below 
+- [South Horn Gold Farming](/crescent/southhorn#gold-farming).
+- North Horn Currency Farming (coming soon!)
 
 <br/><hr/>
 ## Treasure Coffers
-Around Occult Crescent you will find randomly coffers spread around the Occult Crescent. These coffers come in two varities: Bronze and Silver. 
-Both contain mounts, hairstyles, materia, party favors, materials required for gear progression, and so much more.
-These are spawned in by doing things such as completing FATEs, CEs, clearing Forked Tower: Blood (South Horn Specific), and earning gold pieces from killed mobs.
+Around Occult Crescent, you will randomly find  coffers spread throughout the field. These 
+coffers come in two varities: bronze and silver. Both contain mounts, hairstyles, materia, 
+party favors, materials required for gear progression, and so much more. These are spawned by 
+completing FATEs, CEs, clearing Forked Tower: Blood (South Horn Specific), and earning gold pieces from killed mobs.
 
 <div style="display:flex; justify-content: center;">
 | Activity | Bronze Spawn % | Silver Spawn % | 
@@ -185,70 +207,73 @@ These are spawned in by doing things such as completing FATEs, CEs, clearing For
 | Forked Tower: Blood | 2 spawn  | 1 spawns, 10% for another |
 </div>
 
-In total, you can have 8 silvers and 30 bronzes spawned at one time. You can check the number of coffers currently available by using Phantom Freelancer's *Occult Treasuresight* anywhere while in Occult Crescent.
-Upon use you will be given an echo message stating how many silvers and bronzes are currently spawned, no locations are given.
+In total, you can have 8 silvers and 30 bronzes spawned at one time. You can check the number of coffers currently 
+available by using Phantom Freelancer’s *Treasuresight* anywhere within Occult Crescent. Upon use, you 
+will be given an echo message stating how many silvers and bronzes are currently spawned, although no locations are given.
 
 Example: `You sense the presence of 1 silver coffer and 9 bronze coffers in the area!`
 
 :::note[Coffers Drop Table and Rates]
-You can visit <a href="https://gacha.infi.ovh/occult/?territory=1&coffer=1596" target="_blank">Infi's Gacha Website</a> to see what items can drop from both kinds of coffers and how rare each item is from
-their respective coffer.
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=1&coffer=1596" target="_blank">Infi's Gacha Website</a> 
+to see what items can drop from both kinds of coffers and how rare each item is from their respective coffers.
 :::
 
 ### Bronze/Silver Coffer Locations
-If you are wanting to see the location and possible chest sweep routes, feel free to visit each zone's respective page
+If you want to see the location and possible chest sweep routes, feel free to visit each zone’s respective page
 - [South Horn Chest Map + Sweeping Routes](/crescent/southhorn#chest-farming)
 - North Horn Chest Map + Sweeping Routes (coming soon!)
 
-
 <br/><hr/>
 ## Persistent Pots
-Similar to Eureka Bunnies, the Persistent and Pleading Pots FATEs, that when completed succesfully, will grant you extra special rewards if you are lucky to obtain a magical elixir. Using the elixir and
-ensuring the Persistent Pot companion you just obtained does not die, the pot will guide around to a hidden coffer. These coffers are either bronze, silver and gold. Each one rarer than the last but containing
-more and more rewards. As of 7.3, pots will now give both enlightenment silver and gold pieces from opening their coffers. 
+Similar to Eureka Bunnies, the Persistent and Pleading Pots FATEs that, upon completing successfully, 
+will grant you extra special rewards, if you’re lucky enough to obtain a magical elixir. Using the elixir 
+and ensuring the Persistent Pot companion you just obtained does not die, the pot will guide you to a hidden coffer. 
+These coffers are either bronze, silver, or gold. Each one is rarer than the last, but contains greater and greater rewards. 
+As of 7.3, pots will now give both enlightenment silver and gold pieces from opening their coffers.
+
 <div style="display:flex; justify-content: center;">
 | Coffer | Spawn % | Currency Rewards |
 | :--: | :--: | :--: |
 | Bronze | 50% | 100 silver, 160 gold |
 | Silver | 40% | 300 silver, 480 gold |
-| Gold | 10% | 1000 silver, 1600 gold |
+| Gold | 10% | 1,000 silver, 1,600 gold |
 </div>
 
-On rare occasions (~10% of the time), the pot companion will stick around and will offer to take you to *another* hidden coffer. You should take them up on this offer because these 
-"double ups" will **always** garauntee a gold coffer.
+On rare occasions (~10% of the time), the pot companion will stick around and 
+will offer to take you to another hidden coffer. You should take them up on this 
+offer because these “double-ups” will always guarantee a gold coffer.
 
 :::tip[Pots Drop Table and Rates]
-You can visit <a href="https://gacha.infi.ovh/occult/?territory=2&coffer=2014743" target="_blank">Infi's Gacha Website</a> to see what items can drop from both kinds of coffers and how rare each item is from
-their respective coffer.
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=2&coffer=2014743" target="_blank">Infi's Gacha Website</a> to 
+see what items can drop from both kinds of coffers and how rare each item is from their respective coffer type.
 :::
 
 ### Pot Chest Locations
-To see a map showcasing all potential pot coffer locations please visit appropriate zone's page.
-- [South Horn Pot Chest Map + Fast Locating Guide](/crescent/southhorn#south-horn-persistent-pots)
-- North Horn Pot Chest Map + Fast Locating Guide (coming soon!)
+To see a map showcasing all potential pot coffer locations please visit the appropriate zone’s page.
+- [South Horn Pot Chest Map + Chest Locating Guide](/crescent/southhorn#south-horn-persistent-pots)
+- North Horn Pot Chest Map + Chest Locating Guide (coming soon!)
 
-<br></br>
-<hr></hr>
+<br/><hr/>
 ## Fortune Carrots
-Very rarely you can obtain Fortune Carrots from Bronze/Silver coffers and any rarity of pot chest. 
+Very rarely you can obtain Fortune Carrots from bronze coffers, silver coffers, and any rarity of pot chest.
 
-To redeem a Fortune Carrot, you must find and stand near a half-eaten ground carrot that are in random, pre-determined spots throughout Occult Crescent.
-Upon use, a Happy Bunny will appear and reward you with a gold chest. This chest contains 1000 silver, 1600 gold, 200k gil, and an assortment of other rare items.
+To redeem a Fortune Carrot, you must find and stand near a half-eaten ground carrot that appearsin random, pre-determined spots throughout Occult Crescent. 
+Upon use, a Happy Bunny will appear and reward you with a gold chest. This chest contains 1,000 silver, 1,600 gold, 200,000 gil, and an assortment of other rare items.
 
 :::caution[Bunny Coffer Drop Table and Rates]
-You can visit <a href="https://gacha.infi.ovh/occult/?territory=3&coffer=2012936" target="_blank">Infi's Gacha Website</a> to see what items can drop from both kinds of coffers and how rare each item is from
-their respective coffer.
+You can visit <a href="https://gacha.infi.ovh/occult/?territory=3&coffer=2012936" target="_blank">Infi's Gacha Website</a> to 
+see what items can drop from both kinds of coffers and how rare each item is from their respective coffer type.
 :::
 
 ### How Carrot Spawns Work
-- 2 Carrots can be on the map at a time at random, pre-determined spots
-  - These are per-instance, so you can leave instance and join a new one to get completely different carrot spots
-- These 2 carrots are visible by all players
-  - Light competition as anyone can visit a carrot spot and use it
+- 2 carrots can be on the map at a time in random, pre-determined spots
+   - These are per-instance, so you can leave an instance and join a new one to get completely different carrot spots.
+- These 2 carrots are visible to all players
+   - There can be light competition as anyone can visit a carrot spot and use it.
 - If a player uses a carrot another will instantly respawn in a spot where there is not a carrot
-  - This includes the spot where a carrot *just* was (meaning you can chain together multiple - <a href="https://youtu.be/1P76wrOBgkc" target="_blank">Video of a carrot chain</a>)
+   - This includes the spot where a carrot just was (meaning you can chain together multiple - <a href="https://youtu.be/1P76wrOBgkc" target="_blank">Video of a carrot chain</a>)
 
 ### Pot Chest Locations
-To see a map showcasing all potential pot coffer locations please visit appropriate zone's page.
+To see a map showcasing all potential carrot locations please visit the appropriate zone’s page.
 - [South Horn Fortune Carrot Map](/crescent/southhorn#south-horn-fortune-carrots)
 - North Horn Fortune Carrot Map (coming soon!)
