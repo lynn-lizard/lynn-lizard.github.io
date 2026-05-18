@@ -143,24 +143,28 @@ export default defineConfig({
       {
         label: 'North Horn Teasers',
         link: '/crescent/northhorn'
+      }]
+    }, {
+      // Forked Tower: Blood
+      label: 'Forked Tower: Blood',
+      collapsed: false,
+      items: [{
+        label: 'Overview',
+        link: '/crescent/ftb'
       },
       {
-        label: 'Forked Tower: Blood',
-        collapsed: false,
-        items: [{
-          label: 'Overview',
-          link: '/crescent/ftb'
-        },
-        {
-          label: 'Encounter Guides',
-          link: '/crescent/ftb_encs'
-        },
-        {
-          label: 'In-depth Phantom Job Guides',
-          link: '/crescent/ftb_pjobs'
-        }]
-      }
-    ]
+        label: 'Encounter Guides',
+        link: '/crescent/ftb_encs'
+      },
+      {
+        label: 'In-depth Phantom Job Guides',
+        link: '/crescent/ftb_pjobs'
+      }]
+    }, {
+      // Forked Tower: Blood
+      label: 'Forked Tower: Magic (WIP)',
+      collapsed: true,
+      items: []
     }]
   }), mdx(), icon()]
 });

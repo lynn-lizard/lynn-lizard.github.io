@@ -165,43 +165,6 @@ hr {
 	display: none !important;
 }
 
-/* Colors for the ops on the left sidebar */
-:where(.ucob-sidebar):hover,
-:where(.ucob-sidebar)[aria-current="page"],
-:where(.ucob-sidebar)[aria-current="page"]:hover,
-:where(.ucob-sidebar)[aria-current="page"]:focus {
-	background-color: #ac7522;
-	color: white;
-}
-:where(.uwu-sidebar):hover,
-:where(.uwu-sidebar)[aria-current="page"],
-:where(.uwu-sidebar)[aria-current="page"]:hover,
-:where(.uwu-sidebar)[aria-current="page"]:focus {
-	background-color: #1d5296;
-	color: white;
-}
-:where(.tea-sidebar):hover,
-:where(.tea-sidebar)[aria-current="page"],
-:where(.tea-sidebar)[aria-current="page"]:hover,
-:where(.tea-sidebar)[aria-current="page"]:focus {
-	background-color: #e2d135;
-	color:#202020 !important;
-}
-:where(.dsr-sidebar):hover,
-:where(.dsr-sidebar)[aria-current="page"],
-:where(.dsr-sidebar)[aria-current="page"]:hover,
-:where(.dsr-sidebar)[aria-current="page"]:focus {
-	background-color: #ce3535;
-	color: white;
-}
-:where(.top-sidebar):hover,
-:where(.top-sidebar)[aria-current="page"],
-:where(.top-sidebar)[aria-current="page"]:hover,
-:where(.top-sidebar)[aria-current="page"]:focus {
-	background-color: #741e80;
-	color: white;
-}
-
 /* Buttons the landing page */
 .multi-button {
 	display: inline-flex;
@@ -260,27 +223,27 @@ hr {
 		}
 
 		&:nth-of-type(1)::after {
-			background-color: #8c3211;
+			background-color: #e4b108;
 			border-radius: 6px 0 0 6px;
 		}
 
 		&:nth-of-type(2)::after {
-			background-color: #4e85cd;
+			background-color: #a018d6;
 			border-radius: 6px 0 0 6px;
 		}
 
 		&:nth-of-type(3)::after {
-			background-color: #e2d135;
+			background-color: #df3933;
 			border-radius: 6px 0 0 6px;
 		}
 
 		&:nth-of-type(4)::after {
-			background-color: #ce3535;
+			background-color: #0b50e6;
 			border-radius: 6px 0 0 6px;
 		}
 
 		&:nth-of-type(5)::after {
-			background-color: #741e80;
+			background-color: #a80abd;
 			border-radius: 6px 0 0 6px;
 		}
 	}
