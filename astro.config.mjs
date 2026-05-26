@@ -163,8 +163,11 @@ export default defineConfig({
     }, {
       // Forked Tower: Blood
       label: 'Forked Tower: Magic (WIP)',
-      collapsed: true,
-      items: []
+      collapsed: false,
+      items: [{
+        label: 'Overview',
+        link: '/crescent/ftm'
+      }]
     }]
   }), mdx(), icon()]
 });
