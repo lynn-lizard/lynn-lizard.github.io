@@ -1,6 +1,6 @@
 ---
 title: "Occult Crescent: North Horn"
-description: Teasers and Information from LiveLetters
+description: "North Horn Information"
 tableOfContents:
   minHeadingLevel: 2
 ---
@@ -10,312 +10,429 @@ import { Icon } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import Footer from '@components/Footer.astro'
 
-# NORTH HORN AND FORKED TOWER: MAGIC WILL RELEASE ON JULY 28th!!!
-## Preparing for North Horn
-The only required thing is **completing the South Horn MSQ.** This involves completing the <a target="_blank" href="https://ffxiv.consolegameswiki.com/wiki/Mysteries_Abide">"Mysteries Abide"</a> 
-quest and have earned the achievement <a target="_blank" href="https://ffxiv.consolegameswiki.com/wiki/Highly_Crescentialed">"Highly Crescentialed"</a>.
-
-But there are a few "nice to do's" should maybe consider:
-1. Getting pieces of Arcanaut's+1/2 gear as in North Horn you will be able to skip certain upgrade steps.
-2. Farming Silver/Gold pieces just in case!
-3. Capping your silver and bronze chests, you never know!
-4. Farming as many Fortune Carrots as possible. These might potentially grant extra currency to use and new rewards to sell.
-
-:::danger[Unknown Information]
-Any information not listed here is either speculative, rumored, or false.
+:::danger[Work in Progress]
+This page is a work in progress. Information here is subject to change or be added overtime as we learn more 
+about the North Horn.
 :::
 
-## Sources
-- Link to relevant sections of LiveLetter 91: https://www.youtube.com/live/JxR-gTLJmzM?si=k-HdMBE6Tch7dWY8
-  - Timestamps: 1:23:00 to 1:35:30
-- Link to the FFXIV Special Site: https://na.finalfantasyxiv.com/dawntrail/patch_7_5/
-  - Will contain spoilers of ALL patch 7.5 content, be warned!
-- Famitsu Interview: https://www.famitsu.com/article/202604/71816
-  - Has more tidbits about how certain things will work in North Horn along with other 7.5 spoilers.
-
-Coming sometime in the 7.5 patch cycle, Occult Crescent: North Horn will feature an entirely new zone with new a locale, FATEs, engagements, Phantom Weapons, Occult Gear, 
-and the second half of the Forked Tower dungeon series.
-
-Its out on July 28th, 2026.
-
-## The TL;DR
-- Knowledge Level cap increased to 40!
-- Knowledge Level 20+ is **NOT REQUIRED** to enter North Horn! Only requirement is finishing the South Horn story (FT: Blood is not required)!
-- New Mobs/Monsters, FATEs, Critical Engagements
-- 8 new Phantom Jobs. This is supposedly the final number accord to Famitsu. The eight mentioned are:
-   - Black Mage
-   - White Mage
-   - Summoner
-   - Red Mage
-   - Dragoon
-   - Ninja
-   - Blue Mage
-   - Necromancer
-- New sets of Occult Gear
-  - Notably: If you have previous Arcanaut's, you will have the ability to "skip" some steps when enhancing your gear in North Horn.
-- New 48 person dungeon/raid - The Forked Tower: Magic.
-- Two difficulties of Forked Tower: Magic
-  - A more casual "Normal" mode geared towards story enjoyers.
-    - Queued through joining a North Horn instance and standing on the Aetherial Node when active.
-    - If not selected for an entry, you will be given priority for the next (think Notoriety from Bozja Duels?)
-    - According to Famitsu, its possible to be solo'd
-  - A harder, "Extreme" version for those seeking a challenge.
-    - Queue into an "extreme-mode-only" instance with Forked Tower immediately accessible 
-    - According to the Famitsu inverview, this is said to be **HARDER** than Forked Tower: Blood.
-    - According to Famfitsu, only 12 people minimum are required to clear FTMEx? Might be scaled around gear upgrades?
+This is the second zone of the Occult Crescent released in patch 7.55; it contains many FATEs, Critical Encounter,
+and the Forked Tower: Magic (Normal and Extreme). This zone also serves as setting for the last  half of the story. 
 
 <br/><hr/>
-## First Look at North Horn
-All they can show for now is the landscape. Maybe we'll get more in the next LiveLetter!
+
+## Area Map
+<Image
+    src="/nh/nhcombo.png"
+    width="600"
+    height="400"
+    decoding="async"
+    loading="eager"
+    alt="Crystal Paste Values"
+    onclick="window.open('/oc/bunny.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+<br/><hr/>
+## Mobs
+Mobs of varying species and types can be found in clusters around the South Horn. 
+Generally, the further you go from base camp, the higher the level of mob you will encounter
+
+You can find a non-exhaustive list of mobs along with their aggro type and resistances on the <a href="https://docs.google.com/spreadsheets/d/1oWuDtRxYUsVo2HxzvUecnzXpyRo1ozxuw_s6Lr2gepU/edit?gid=2005261057#gid=2005261057" target="_blank">Do It Doom</a> 
+spreadsheet maintained by Wobl.
+- Do It Doom: https://docs.google.com/spreadsheets/d/1oWuDtRxYUsVo2HxzvUecnzXpyRo1ozxuw_s6Lr2gepU/edit?gid=2005261057#gid=2005261057
+
+:::tip[Mob Credit]
+Kill credit and rewards for mobs are only given to the party/person who attacks or aggros the mob first. 
+:::
+
+### Weather Based Mobs
+Some mobs spawn under specific weather conditions, and  are often much higher level than the mobs around them. Of the 6 total weather conditions, 5 have unique mobs:
+Of the 6 total weathers, 5 have unique mobs:
+<div style="display:flex; justify-content: center;">
+| Mob | Weather | Uptime % |
+| :---: | :---: | :---: |
+| **N/A** | Fair Skies | 45% |
+| **Crescent Bomb** | Clear Skies | 10% |
+| **Crescent Mousse** | Rain | 10% |
+| **Crescent Dhurva** | Clouds | 15% |
+| **Crescent Mimic** | Atomsphereic Phantasms | 15% |
+| **Crescent Fool** | Illusory Disturbances | 5% |
+</div>
+
+:::note[Auroral Mirages]
+Auroral Mirages will not despawn weather specific mobs. The zone’s actual weather cycle will remain active in the background. A similar behavior is found with Umbral Turbulence (Ovni weather) in Eureka: Hydatos.
+:::
+
+Killing these mobs rewards roughly double or triple the gold for their level,and these rewards are affected by chaining; so, 
+a level 48 weather mob can reward up to 48 gold! Most of these mobs are stationary, though Crescent Fools do wander a large set path through the zone.
+
+### Ashkin/Undead
+Undead mobs (referred to as Ashkin by the game) spawn between **10pm and 4am** Eorzean time. All undead are proximity and blood (low hp) based aggro.
+
+:::note[Undead Mobs Give More Gold!]
+When being killed, undead mobs will grant more gold similar to weather mobs.
+:::
+
+<br/><hr/>
+## Occult Records
+This section will spoil all survey points needed to fill out your Occult Record book.
+
+The other records in your book can be filled out via Field Notes, which can be earned from completing FATEs, CEs, and defeating bosses in the Forked Tower: Magic (Normal/Extreme).
 
 <details>
-<summary>**SPOILERS**: First Images of North Horn</summary>
-<Image
-    src="/liveletter/nh1.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 1"
-    onclick="window.open('/liveletter/nh1.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
+<summary>[SPOILERS] All Survey Points for the Occult Record</summary>
+#### Visitable Survey Points
+- #31 North Horn Base Camp - X:39, Y: 38
+- #32 The Crown of Karnak - X:36, Y: 32
+- #36 Shadowdeep - X: 27, Y: 26 
+- #37 Labyrinth of the Damned - X: 39, Y: 22
+- #39 Panoptical Pillar - X: 27, Y: 14 
+- #40 Sinking Sanctuary - X: 40, Y: 3 
+- #43 The Marrowood - X: 17, Y: 5 
+- #45 Suspended Masonary - X: 11, Y: 38 
+- #46 The Windward Watch - X: 4, Y: 36
+- #47 Shrine of Spheres - X: 3, Y: 24 
+- #49 Moldering Streets - X: 7, Y: 14 
+- #51 The Moldering Lake - X: 4, Y: 3 
+- #52 Unhallowed Hamlet - X: 21, Y: 19 
+- #54 Dark Territory - X: 22, Y: 23 (this is in the Subterrne area)
+- #60 Concealed Collection - X: 11, Y: 10 (final room of FT: Magic Normal/Extreme)
 
+#### Visual Guide
 <Image
-    src="/liveletter/nh2.jpg"
-    width="1000"
-    height="800"
+    src="/nh/NHRecords.png"
+    width="600"
+    height="400"
     decoding="async"
     loading="eager"
-    alt="North Horn Teaser 2"
-    onclick="window.open('/liveletter/nh2.jpg','_blank')"
+    alt="Crystal Paste Values"
+    onclick="window.open('/oc/bunny.png','_blank')"
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
-
-<Image
-    src="/liveletter/nh3.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 3"
-    onclick="window.open('/liveletter/nh3.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-</details>
-
-<details>
-<summary>**SPOILERS**: More Images of North Horn from the Special Site!</summary>
-Looks like more nods to Lost City of Ampador and the deep Gridanian spores as well as Wanderer's Palace!
-<Image
-    src="/liveletter/nh4.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 3"
-    onclick="window.open('/liveletter/nh4.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-
-<Image
-    src="/liveletter/nh5.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 3"
-    onclick="window.open('/liveletter/nh5.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-
-<Image
-    src="/liveletter/nh6.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 3"
-    onclick="window.open('/liveletter/nh6.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-
-<Image
-    src="/liveletter/ocstory.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="North Horn Teaser 3"
-    onclick="window.open('/liveletter/ocstory.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
 </details>
 
 <br/><hr/>
-## New Features
-New monsters, critical encounters, and FATEs will appear in North Horn!
-<Image
-    src="/liveletter/nh_features.png"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="New Features"
-    onclick="window.open('/liveletter/nh_features.png','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
+## Critical Encounters
+Critical Encounters, or CEs from here on, are the beefed up version of FATEs. 
+These battles are against fiercer foes and can sometimes reward new Phantom Jobs, Field Notes, as well as more experience and silver. 
+CEs are split into two kinds: ones that can be spawned by the player, and ones that spawn randomly without player input. 
+The rewards are the same regardless of spawn method.
 
-### First Look at a Critical Encounter
-<details>
-<summary>**SPOILERS! Click this at your own risk**</summary>
-Looks like there's all of the new job gear along with teasers for the following phantom jobs from left to right: Phantom Summoner, Phantom Ninja(?), Phantom White Mage, and Phantom Black Mage!
+Every successful Critical Encounter will reward the following
+- 400-260,420 Knowledge EXP (scales to your knowledge level)
+- 720 Phantom Job EXP
+- 20 uncapped tomestones
+- 10 weekly capped tomestones
+- 200 enlightenment silver obol pieces
+- 10 of a Phantom Dispeller (drops are CE dependant, see Phantom Weapons section)
+- Field Notes (specified below)
+- Rarely an occult accessory
+
+### Tracking Critical Encounters
+You can use Infi’s Occult Tracker website to help you keep track of which FATEs and CEs have spawned. 
+This site will also help you know which encounters drop which  rewards (Field Notes, Demiatmas, etc.) 
+along with which CEs can be spawned by players and which mobs will spawn them.
+
+- <a href="https://tracker.infi.ovh/" target="_blank">Infi's Tracker</a>
+- <a href="https://ffxiv-occult.com/" target="_blank">Occult Tracker</a>
+
+### Randomly Spawning CEs
+These CEs will spawn randomly over time, and have a ~120 minute (2 hours) cooldown: 
+<div style="display:flex; justify-content: center;">
+| CE | Boss | Noteable Drops | Accessory Drop | Weakness |
+| :---: | :---: | :--: | :--: | :--: |
+A Beast Unleashed|Atlas Carbuncle||Bracelet|Ice|
+Accept No Imitators|Metamorph|Field Note \#38|Earring|Wind|
+Ahead of the Competition|Phantom Hydra||Bracelet|Ice|
+Appalling Behavior|Pallmagia|Field Note \#41/Blue Mage|Earring|Fire|
+Dark Artistry|Phantom Necromancer|Field Note\#42/Necromancer|Necklace|Wind|
+Familiar Tactics|Elm Gigas||Bracelet|Lightning|
+Forbidden Folios|Arbatel|Field Note \#33|Bracelet|Fire|
+Imbalanced Diet|Algol|Field Note \#35|Earring|Fire|
+Lost on the Wind|The Abductor|Field Note \#44|Necklace|Lightning|
+Quarried Away|Alabaster Blade|Field Note \#50|Earring|Lightning|
+Tiny Terror|Tiny Mage|Field Note \#34|Bracelet|Lightning|
+</div>
+
+### Player Spawned CEs
+These CEs are spawned by killing specific mobs. If it doesn’t spawn, keep trying! These have a ~60 minute (1 hour) cooldown.
+<div style="display:flex; justify-content: center;">
+| CE | Boss | Spawn Mob | Mob Location | Noteable Drops | Accessory Drop | Weakness |
+| :---: | :---: | :--: | :--: |  :--: | :--: | :--: |
+Cursed Resurgence|Claret Dragon|Crescent Big Horns|(X: 5, Y: 27)|Field Note \#48|Necklace|Fire|
+Doubled Trouble|Conjured Calofisteri|Crescent Blackguards|(X: 20, Y: 19)|Field Note \#53|Necklace|Wind|
+Many Mouths to Feed|Pelekys|Crescent Wamouras|(X: 3, Y: 3)||Earring|Ice|
+Web of Terror|Crescent Arachne|Crescent Hellhounds|(X: 24, Y: 18)||Necklace|Ice|
+</div>
+
+### Critical Engagement Map
 <Image
-    src="/liveletter/nhce.jpg"
-    width="1000"
-    height="800"
+    src="/nh/NHCE.png"
+    width="600"
+    height="400"
     decoding="async"
     loading="eager"
-    alt="New Features"
-    onclick="window.open('/liveletter/nhce.png','_blank')"
+    alt="Crystal Paste Values"
+    onclick="window.open('/oc/bunny.png','_blank')"
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+<br/><hr/>
+## FATEs
+<div style="display:flex; justify-content: center;">
+| FATE | Location | Noteable Drops | Weakness |
+| :---: | :---: | :--: | :--: |
+Daylight Pottery (NE)|(X: 26, Y: 11)|Gremlins|Fire
+In a Pot of Bothre (SE)|(X: 11, Y: 26)|Fans|Lightning
+A Rotten Affair|(X: 12, Y: 5)|Patient Kuribu|Wind/Lightning
+Allue of the Occult|(X: 13, Y: 16)|Sensual Sandy|Fire
+Eye to Eye|(X: 31, Y: 20)|Evil-seer|Fire
+Gale-force Encounter|(X: 4, Y: 31)|Stormcaller|Fire
+Inconstant Gardner|(X: 18, Y: 11)|Iambe|Fire
+Raging Thrall|(X: 35, Y: 25)|Machetaur|Fire
+Scale Model|(X: 8, Y: 20)|Demi-Medusa|Ice
+Shoreline Showdown|(X: 23, Y: 30)|Regnant Chimera|Wind
+Territorial Dispute|(X: 19, Y: 38)|Ruin Hound|Fire
+Thunderregnum|(X: 24, Y: 7)|Creseregiana|Fire
+Waved Away|(X: 28, Y: 16)|Arch Kelpie|Lightning
+</div>
+
+
+<br/><hr/>
+## Forked Tower Magic: Normal
+:::danger[Normal Mode is like Castrum Lacus Litore or Dalriada]
+The Normal mode tower is meant to be cleared and enjoyed by everyone of any skill level. It is no where near the difficulty that Forked Tower: Blood had.
+
+Please do not fret and do enjoy the content! Its quite nice.
+:::
+
+Once unlocked you can enter the Forked Tower: Magic in the South West shore of the central lake. There's a pavillion that will glow during **Auroral Mirages** and take anyone standing
+on the Pavillion inside after a recruitment period. Once inside you will be tasked with defeating bosses and travesing the the tower. 
+
+**There are no enrages, lives, hidden traps, extra secret encounters, or anything that could cause a total wipe of the group.**
+
+You can earn Arcane Amulets by defeating bosses and finding hidden chests using Thief's percept/unlock skills.
+
+### How to Spawn Forked Tower: Magic
+The weather will change to Auroral Mirages, meaning the the tower is open for recruiting, under the following conditions:
+- One person in the instance is knowledge level 40 with Forked Tower: Magic unlocked.
+- A hidden timer of 60 minutes has passed
+  - This timer can be reduce by 5 minutes for every CE completed and 1 minute for every FATE completed.
+
+<br/><hr/>
+## Currencies
+There are currently 3 different types of currency that are all earned in (mostly) unique ways and can be exchanged for mounts, 
+glamours, gear progression, ciphers for Forked Tower: Magic, or other resources to aid you in taking on the South Horn. 
+Silver obols are from FATEs, CEs, and Pots/Bunnys, gold obols are earned from chaining mobs or Pots/Bunnys, and 
+Arcanne Amulets are from Forked Tower: Magic (similar to Eurekan Fragments from Baldesian).
+
+### Enlightenment Silver Obol Pieces
+Enlightenment silver obol pieces are only earned by doing FATEs, CEs, Forked Tower: Magic (Normal/EX), and opening Pot/Bunny coffers in the South Horn.
+<div style="display:flex; justify-content: center;">
+| Activity | Amount Earned |
+| :---: | :---: |
+| **FATEs** | 70 |
+| **CEs** | 200 |
+| **FT: Magic** | 800 |
+| **Treasure Coffers** | 10-1000 |
+| **Pot Chests** | 100/300/1,000|
+| **Bunny Chests** | 1,000 |
+</div>
+
+Silver obol pieces are primarily used for both purchasing and augmenting Phantom Vision gear. 
+You can see a full list of items available to purchase by visiting the Expedition Antiquarian in base camp. Additional notable items include:
+<details>
+<summary>Notable Silver Obol Purchases</summary>
+<div style="display:flex; justify-content: center;">
+| Item | Cost | Use |
+| :---: | :---: | :--: |
+| **North Horn Riding Map** | 3,000 | Increases mount speed, makes travelling around much easier. |
+| **Ph. Ninja** | 1,000 | Evasive, can nullify most attacks, attacks fast. | 
+| **Ph. Red Mage** | 1,000 | Elemental spells, can identify and increase elemental weakness damage. | 
+| **Ph. White Mage** | 1,000 | Healer and raiser, a strong alternative to chemist. | 
+| **Ph. Black Mage** | 1,000 | Elemental spells, can use Occult Toad to toad many dangerous enemies | 
+| **Final Final Fixative** | 1,200 | Used in upgrading Phantom Vision gear to any tier. |
+| **Various glamour pieces** | 1,000 | New pieces of unique glamour |
+</div>
+</details>
+
+<br/>
+### Enlightenment Gold Obol Pieces
+Enlightenment gold obol pieces are only earned by chaining mobs or opening Pot/Bunny coffers in the South Horn.
+<div style="display:flex; justify-content: center;">
+| Activity | Amount Earned |
+| :---: | :---: |
+| **Mobs** | Varied, higher level = more gold |
+| **Pot Chests** | 160/480/1,600 |
+| **Treasure Coffers** | 10-1600 |
+| **Bunny Chests** | 1,600 |
+</div>
+:::note[Gold Increase from Chaining]
+When above a chain of 20, any gold earned will be doubled, so keep that chain going for as long as possible!
+:::
+
+Gold pieces are primarily used for purchasing Final Final Fixatives for augmenting Phantom Vision Gear.
+You can see a full list of items available to purchase by visiting the Expedition Antiquarian in base camp. Additional notable items include:
+<details>
+<summary>Notable Gold Obol Purchases</summary>
+<div style="display:flex; justify-content: center;">
+| Item | Cost | Use |
+| :---: | :---: | :--: |
+| **Ph. Dragoon** |  1,000 | Jump to reduce damage, get free shields, dash all over! |
+| **Ph. Summoner** | 1,000 | High damage spells with long cast times, very powerful! | 
+| **Final Final Fixatives** | 1,920 | Used in upgrading Phantom Vision gear to any tier. | 
+| **Coffers/Potions** | 50 | Items used by Ph. Samurais/Chemists. Alternative to spending gil if no other uses for gold. |
+| **Various glamour pieces** | 1,600 | New pieces of unique glamour |
+</div>
+</details>
+
+### Arcane Amulets
+Arcane Amulets are earned only from doing Forked Tower: Magic Normal OR Extreme. The amount of amulets possible chances based on which
+difficulty you do; extreme granting more overall per clear.
+
+<div style="display:flex; justify-content: center;">
+| Difficulty | Max Amount |
+| :---: | :---: |
+| **Normal** | 14 |
+| **Extreme** | 25 |
+</div>
+
+Arcane Amulets can be used for buying the Duck-biller Porter mount, minions, occult records from Forked Tower: Blood
+and Final Final Fixatives for augmenting Phantom Vision gear.
+<details>
+<summary>Notable Arcane Amulet Purchases</summary>
+<div style="display:flex; justify-content: center;">
+| Item | Cost | Use |
+| :---: | :---: | :--: |
+| **Duck-billed Porter** | 500 | Bingus. |
+| **Tiny Omniscient** | 10 | Mini version of the final boss | 
+| **Final Final Fixatives** | 30 | Used in upgrading Phantom Vision gear to any tier. |
+| **Field Notes on FT: Blood** | 3 | Individual boss notes on the 4 bosses of FT: Blood | 
+| **Magitaur Card** | 3 | Triple Triad card that was exclusive to clearing FT: Blood. |
+| **Various glamour pieces** | 7 | New pieces of unique glamour |
+</div>
 </details>
 
 <br/><hr/>
-## Knowledge Level Increase and New Jobs
-The knowledge level cap is increasing from 20 up to 40! Along with new Phantom Jobs being added to be leveled and mastered. 
+## Occult Accessories
+These can be very rarely obtained from completing Critical Encounters in the North Horn, opening bronze/silver treasure coffers, and opening **gold** chests from either a Persistent Pot or Happy Bunnies (Fortune Carrots). 
+### Accessory Sources and Drop Rates
+- Earrings, Necklaces, and Bracelets can only be obtained from Critical Encounters and treasure coffers around the North Horn. 
+Specific CEs drop specific (non-ring) gear slots, either ‘of Blood’ or ‘of Magic,’ at random. A map showcasing which CE drops what accessory is below.
+  - CEs have a ~0.13% drop rate.
+  - Coffers have a ~0.012% drop rate.
 
-Currently there are 8 confirmed/shown on the live letter. These are (left to right in image below): *Black Mage, Dragoon,
-White Mage, Ninja, Summoner, Blue Mage, Red Mage, and Necromancer.*
 <Image
-    src="/liveletter/newjobs.jpg"
-    width="1000"
-    height="800"
+    src="/nh/NHAccs.png"
+    width="600"
+    height="400"
     decoding="async"
     loading="eager"
-    alt="New Jobs"
-    onclick="window.open('/liveletter/newjobs.jpg','_blank')"
+    alt="acc_map"
+    onclick="window.open('/oc/acc_map.png','_blank')"
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+- **Rings** can only be obtained from **gold** Persistent Pot chests.
+  - ~10% drop rate
+- **Deep Rings** can only be obtained by opening a chest revealed by a Happy Bunny through the use of Fortune Carrots.
+  - ~20% drop rate
+
+:::note[Drop Rate Sources]
+All drop rate information is sourced from <a href="https://gacha.infi.ovh/occult/" target="_blank">Infi's Gacha Website</a>
+:::
 
 <br/><hr/>
-## Gearing in North Horn
-More grinds for more gear! You will get the ability to further enhance your gear to become even stronger than you currently are. There are items likely similar to the fixatives and 
-aetherspun silver/gold needing to be gathered upgrade your gear.
+## Gold Obol Farming
+Gold farming is primarily done with the use of Phantom Thief tanks, Thief sages, and jobs such as Cannoneers, pSummoners, Necromancer, or pBlack Mages to kill groups of high
+level mobs before they overwhelm the group. Most groups tend to use the far-side of the Dark Territory located in the
+Subterrane section of the map. They go in circles gathering and killing the Jesters and Bombadeels until satisfied.
 
-If you currently have any upgraded gear from the South Horn, you will be able to skip some of the steps required to enhance/obtain gear from North Horn. Hope you have your Arcanaut's ready! 
+More efficient solo farming routes are still being worked out! However have a preliminary guide made by PerryTheFridge aka Spiral Lance:
+<a href="https://www.youtube.com/watch?v=w2tR0CXfAzU" target="_blank">North Horn Solo Gold Farming Guide</a>
 
-<Image
-    src="/liveletter/nh_gear.png"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="New Gear"
-    onclick="window.open('/liveletter/nh_gear.png','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
 
-<br/><hr/>
-## Forked Tower: Magic
-Rejoice! There are now two difficulties. The "Normal" version for those who wish to experience the story in a more casual manner and the more challenging "Extreme" version for those who want something more.
+You can read more about gold farming in the following Google doc: 
+<a href="https://docs.google.com/document/d/1wlCr6ZTR_lnZhbO_1GmpC6oS9K2gaz2GKNJv8dV3zeI/edit?tab=t.39eab4nqlnk0" target="_blank">Actually Good Guides to Gold Farming</a>. 
+The guide contains both solo and group farming guides.
+- Actually Good Guides to Gold Farming: https://docs.google.com/document/d/1wlCr6ZTR_lnZhbO_1GmpC6oS9K2gaz2GKNJv8dV3zeI/edit?tab=t.39eab4nqlnk0
 
-A maximum of 48 players can join either version of the dungeon.
-
-Ciphers are dead! No more ciphers!!
-<Image
-    src="/liveletter/ftm1.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="FTM Teaser 1"
-    onclick="window.open('/liveletter/ftm1.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-
-### First Look at Forked Tower: Magic!
-<details>
-<summary>**SPOILERS! Click this at your own risk**</summary>
-Showcases one of the stunning areas of Forked Tower: Magic! What could this be? Who knows...
-
-To me its probably another hallway, there's no purple lines or trap indicators anywhere. Also a teleporter exit in the bottom middle...
-<Image
-    src="/liveletter/ftm4.jpg"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="FTM Teaser 1"
-    onclick="window.open('/liveletter/ftm4.jpg','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-</details>
-
-### Normal Mode
-Queued similar to Forked Tower: Blood, Castrum Lacus Litore (Bozja), Dalriada (Zadnor), and/or other Critical Engagements. 
-Standing atop the Aetherial Node will mark you as "interested" to join the duty so when the recruitment time ends.
-
-If more than 48 are present, players will be selected at random. There seems to be no lower player limit, so you could potentially queue in solo!
-
-If not selected to join, you will be given priority for your next attempt (similar to Notoriety from Bozja Duels?)
-<Image
-    src="/liveletter/ftm2.png"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="FTM Teaser 2"
-    onclick="window.open('/liveletter/ftm2.png','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
-
-### Extreme Mode
-Can be entered by queueing into an "extreme-mode-only" instance, which are different from the normal instances. These unique instances may be entered by a minimum of **12 players** in 3 or more parties.
-
-Once inside this "extreme only" insatnce, Forked Tower: Magic (Extreme) will be immediately accessible for entry.
-
-<Image
-    src="/liveletter/ftm3.png"
-    width="1000"
-    height="800"
-    decoding="async"
-    loading="eager"
-    alt="ftm Teaser 3"
-    onclick="window.open('/liveletter/ftm3.png','_blank')"
-    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
-/>
+:::tip[Mob Credit]
+Kill credit and rewards for mobs is only given to the party/person who attacks or aggros the mob first.
+:::
 
 <br/><hr/>
-## Final Phantom Weapons Grind
-The final step in the Phantom Weapons saga is here! Yoshi-P has mentioned that the final step should look really awesome as they've learned so much more over Dawntrail.
+## North Horn Treasure Coffers
+Looting chests efficiently can help you not overcap and waste chest spawns. Here are a few pre-made routes used by friends and myself.
 
-From the r/FFXIV translations channel:
-> Yoshida "A lot of effort went into these"
-> 
-> Yoshida "We got a lot more comfortable with the graphic update in our work flow as well, these are the last stages"
-
-The new models will be shown off in the next LiveLetter!
-
+### Chest Map
+Here are all chest locations on an unmarked map.
 <Image
-    src="/liveletter/pwt1.jpg"
-    width="1000"
-    height="800"
+    src="/nh/NHChests.png"
+    width="600"
+    height="400"
     decoding="async"
     loading="eager"
-    alt="pw Teaser 2"
-    onclick="window.open('/liveletter/pwt1.jpg','_blank')"
+    alt="acc_map"
+    onclick="window.open('/oc/acc_map.png','_blank')"
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
 
+### Multiple Lines Route
+This route’s useful for doing specific sections of the map at a time. Allows you to take breaks and change what sections you do depending on time.
 <Image
-    src="/liveletter/pwt2.jpg"
-    width="1000"
-    height="800"
+    src="/nh/NHChestRun.png"
+    width="600"
+    height="400"
     decoding="async"
     loading="eager"
-    alt="pw Teaser 2"
-    onclick="window.open('/liveletter/pwt2.jpg','_blank')"
+    alt="coffer_route"
+    onclick="window.open('/oc/coffer_route.png','_blank')"
     style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
 />
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+<br/><hr/>
+## North Horn Persistent Pots
+:::note[Different First Pots Spawn Time]
+First pots in a fresh/new instance of North Horn is after 20 minutes up north. This is different from South Horn's initial 10 minute timer.
+:::
+
+- Cyan = North pot chests
+- Magenta = South pot chests
+- Yellow/Gold = Reroll chests
+
+<Image
+    src="/nh/NHPots.png"
+    width="600"
+    height="400"
+    decoding="async"
+    loading="eager"
+    alt="acc_map"
+    onclick="window.open('/oc/acc_map.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>
+
+<br/><hr/>
+## North Horn Fortune Carrots
+:::note[No Difference in Carrots between North and South Horn]
+Carrots in North Horn function exactly like South Horn carrots, just find the half eaten carrot on the ground and use a Fortune Carrot nearby.
+:::
+
+<Image
+    src="/nh/NHCarrots.png"
+    width="600"
+    height="400"
+    decoding="async"
+    loading="eager"
+    alt="acc_map"
+    onclick="window.open('/oc/acc_map.png','_blank')"
+    style="cursor:pointer; display: block !important; margin-left: auto; margin-right: auto;"
+/>
+<p style="text-align:center; margin-top: 0;">(Click to expand in new window)</p>

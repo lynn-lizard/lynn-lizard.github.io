@@ -141,7 +141,7 @@ export default defineConfig({
         link: '/crescent/southhorn'
       },
       {
-        label: 'North Horn Teasers',
+        label: 'North Horn',
         link: '/crescent/northhorn'
       }]
     }, {
