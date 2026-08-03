@@ -125,6 +125,14 @@ export default defineConfig({
         link: '/crescent/newplayer'
       },
       {
+        label: 'South Horn',
+        link: '/crescent/southhorn'
+      },
+      {
+        label: 'North Horn',
+        link: '/crescent/northhorn'
+      },
+      {
         label: 'Phantom Actions & Jobs',
         link: '/crescent/pjobs'
       },
@@ -135,15 +143,8 @@ export default defineConfig({
       {
         label: 'Phantom Weapons (Relics)',
         link: '/crescent/ocrelics'
-      },
-      {
-        label: 'South Horn',
-        link: '/crescent/southhorn'
-      },
-      {
-        label: 'North Horn',
-        link: '/crescent/northhorn'
-      }]
+      }
+]
     }, {
       // Forked Tower: Blood
       label: 'Forked Tower: Blood',
